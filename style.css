@@ -1,0 +1,253 @@
+html {
+
+position: relative;
+overflow-x: scroll;
+background: url(dust_scratches.png);
+    
+}
+
+navbar {
+
+position: absolute;
+width: 100%;
+height: 120px;
+left: 0px;
+top: 0px;
+background: rgba(241, 241, 241, 0.4);    
+    
+}
+
+
+
+.produkty{
+    
+
+position: absolute;
+width: 66px;
+height: 16px;
+left: 404px;
+top: 54px;
+
+font-family: 'Oswald', sans-serif ;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+
+color: #000000;
+
+}
+
+
+.partnerzy{
+
+position: absolute;
+width: 71px;
+height: 13px;
+left: 499px;
+top: 54px;
+
+font-family: 'Oswald', sans-serif ;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+
+color: #000000;
+
+}
+
+.pomoc{
+
+position: absolute;
+width: 43px;
+height: 13px;
+left: 599px;
+top: 54px;
+
+font-family: 'Oswald', sans-serif ;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+
+color: #000000;
+
+}
+
+.dopobrania{
+
+position: absolute;
+width: 144px;
+height: 46px;
+left: 671px;
+top: 54px;
+
+font-family: 'Oswald', sans-serif ;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+
+color: #000000;
+
+}
+
+.kontakt{
+
+position: absolute;
+width: 66px;
+height: 26px;
+left: 795px;
+top: 51px;
+
+font-family: 'Oswald', sans-serif ;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+
+color: #000000;
+
+}
+
+logo{
+
+position: absolute;
+width: 125px;
+height: 106px;
+left: 160px;
+top: 14px;
+
+background: url(Bez nazwy.png);
+
+}
+
+.ofirmie{
+
+position: absolute;
+width: 53px;
+height: 13px;
+left: 322px;
+top: 54px;
+
+font-family: 'Oswald', sans-serif ;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+
+color: #000000;
+
+}
+
+Line{
+
+position: absolute;
+width: 40px;
+height: 0px;
+left: 967px;
+top: 42px;
+
+border: 1px solid #000000;
+transform: rotate(90deg);
+
+}
+
+image{
+
+position: absolute;
+width: 14px;
+height: 15px;
+left: 1089px;
+top: 55px;
+
+background: url(image.png);
+
+}
+
+rectangle{
+
+position: absolute;
+width: 103px;
+height: 37px;
+left: 795px;
+top: 44px;
+
+}
+
+.rectangle2{
+
+position: absolute;
+width: 78px;
+height: 34px;
+left: 788px;
+top: 45px;
+
+border: 1px solid #BD2446;
+box-sizing: border-box;
+border-radius: 5px;
+
+}
+
+lang{
+
+position: absolute;
+width: 43px;
+height: 14px;
+left: 903px;
+top: 54px;
+
+font-family: 'Oswald', sans-serif ;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+
+color: #000000;
+
+}
+
+arrow{
+
+position: absolute;
+width: 11px;
+height: 5px;
+left: 922px;
+top: 64px;
+
+background: #BD2446;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+}
+
+rectangle3{
+
+position: absolute;
+width: 99px;
+height: 18px;
+left: 984px;
+top: 53px;
+
+border: 1px solid #000000;
+box-sizing: border-box;
+
+}
+
+search{
+
+position: absolute;
+width: 87px;
+height: 10px;
+left: 992px;
+top: 55px;
+
+font-family: 'Oswald', sans-serif ;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+
+color: #9D9D9D;
+    
+}
