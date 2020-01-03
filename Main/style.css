@@ -1,85 +1,123 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
-
 html {
-
-    color: #2a2a2a;
+  color: #2a2a2a;
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans';
-}
-
-h1 {
-    color: #fff;
-    text-align: center;
-    font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
 }
 
 #slider {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 #slider ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    height: 400px;
-    list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  list-style: none;
 }
 
 #slider ul li {
-    position: relative;
-    display: block;
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 60vh;
-    background: #ccc;
-    text-align: center;
-    line-height: 60vh;
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 712px;
+  background: #ccc;
+}
+
+#slider ul li .sliderContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 243px;
+  width: 661px;
+  position: relative;
+  top: 30%;
+  left: 25%;
+  color: white;
+}
+
+#slider ul li .sliderContainer .sliderTitle {
+  text-transform: uppercase;
+  font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+#slider ul li .sliderContainer .sliderText {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#slider ul li .sliderContainer .sliderButton {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#BD2446), to(#6F1529));
+  background-image: linear-gradient(#BD2446, #6F1529);
+  width: 222px;
+  height: 40px;
+  border: none;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 a.control_prev,
 a.control_next {
-    position: absolute;
-    top: 40%;
-    z-index: 999;
-    display: block;
-    padding: 4% 3%;
-    width: auto;
-    height: auto;
-    background: #2a2a2a;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-    opacity: 0.8;
-    cursor: pointer;
+  position: absolute;
+  top: 35%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 a.control_prev:hover,
 a.control_next:hover {
-    opacity: 1;
-    -webkit-transition: all 0.2s ease;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
 }
 
 a.control_prev {
-    border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
 }
 
 a.control_next {
-    right: 0;
-    border-radius: 2px 0 0 2px;
+  right: 0;
+  border-radius: 2px 0 0 2px;
 }
 
 .slider_option {
-    position: relative;
-    margin: 10px auto;
-    width: 160px;
-    font-size: 18px;
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
 }
+/*# sourceMappingURL=style.css.map */
