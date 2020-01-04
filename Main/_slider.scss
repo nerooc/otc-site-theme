@@ -3,7 +3,7 @@
 #slider {
     position: relative;
     overflow: hidden;
-    z-index: -1;
+
 }
 
 #slider ul {
@@ -89,7 +89,6 @@ a.control_next {
 
 a.control_prev:hover,
 a.control_next:hover {
-    opacity: 1;
     -webkit-transition: all 0.2s ease;
 }
 
