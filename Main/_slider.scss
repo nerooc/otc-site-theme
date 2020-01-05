@@ -1,9 +1,9 @@
-@import "./variables";
+@import './variables';
 
 #slider {
     position: relative;
     overflow: hidden;
-
+    z-index: -1;
 }
 
 #slider ul {
@@ -21,9 +21,8 @@
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 712px;
+    height: 650px;
     background: #ccc;
-
 }
 
 #slider ul li .sliderContainer {
@@ -37,7 +36,6 @@
     transform: translate(0, -40%);
     left: 25%;
     color: white;
-
 }
 
 #slider ul li .sliderContainer .sliderTitle {
@@ -45,7 +43,6 @@
     font-size: 45px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-
 }
 
 #slider ul li .sliderContainer .sliderText {
@@ -54,20 +51,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-#slider ul li .sliderContainer .sliderButton {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-image: linear-gradient($base-color, $gradient);
-    width: 222px;
-    height: 40px;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
 
 a.control_prev,
 a.control_next {
