@@ -2,7 +2,7 @@
 #slider {
   position: relative;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
 }
 
 #slider ul {
@@ -248,7 +248,7 @@ a {
 }
 
 #aboutus {
-  width: 43%;
+  width: 42.25%;
   margin: 30px auto;
   line-height: 30px;
   font-family: 'Montserrat', sans-serif;
