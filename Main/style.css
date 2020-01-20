@@ -269,6 +269,15 @@ a {
   padding: 60px 0 60px 0;
 }
 
+#productContainer {
+  height: 400px;
+  width: 700px;
+  -webkit-filter: drop-shadow(2px 2px 1px gray);
+          filter: drop-shadow(2px 2px 1px gray);
+  background-color: white;
+  margin: 60px auto;
+}
+
 html {
   color: #2a2a2a;
 }

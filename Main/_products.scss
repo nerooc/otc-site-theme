@@ -8,10 +8,11 @@
 }
 
 #productContainer {
-    height: 600px;
-    width: 900px;
+    height: 400px;
+    width: 700px;
+    filter: drop-shadow(2px 2px 1px gray);
     background-color: white;
-
+    margin: 60px auto;
 }
 
 #containerTitle {}
