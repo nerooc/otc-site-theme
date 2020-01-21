@@ -1,6 +1,7 @@
 @import './variables';
 
 
+
 #products {
     background-color: #e5e5e5;
     height: 50vh;
@@ -12,7 +13,36 @@
     width: 700px;
     filter: drop-shadow(2px 2px 1px gray);
     background-color: white;
-    margin: 60px auto;
+    margin: 10px auto;
 }
 
-#containerTitle {}
+#containerTable {
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto 20px;
+    width: 680px;
+    height: 40px;
+
+
+
+}
+
+.containerOption {
+    color: #696969;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #d5d5d5;
+    width: calc(680px / 3);
+
+}
+
+.containerOption:hover {
+    color: $base-color;
+    border-bottom: 2px solid $base-color;
+
+
+}
