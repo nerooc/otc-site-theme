@@ -9,29 +9,37 @@
 }
 
 #productContainer {
-    height: 400px;
-    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    width: 770px;
     filter: drop-shadow(2px 2px 1px gray);
     background-color: white;
-    margin: 10px auto;
+    margin: 5px auto;
+}
+
+#productInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #containerTable {
     display: flex;
     flex-direction: row;
-    margin: 40px auto 20px;
+    margin: 40px auto 13px;
     width: 680px;
     height: 40px;
-
-
-
 }
 
 .containerOption {
     color: #696969;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,6 +53,10 @@
     color: $base-color;
     border-bottom: 2px solid $base-color;
     cursor: pointer;
+}
 
-
+#productDescription {
+    width: 490px;
+    height: 190px;
+    text-align: justify;
 }
