@@ -307,11 +307,14 @@ a {
           align-items: center;
   border-bottom: 2px solid #d5d5d5;
   width: calc(680px / 3);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .containerOption:hover {
   color: #BD2446;
   border-bottom: 2px solid #BD2446;
+  cursor: pointer;
 }
 
 html {
