@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -19,7 +19,7 @@
   <script
     src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js">
   </script>
-  <script src="slider.js"></script>
+
 
 
 </head>
@@ -28,14 +28,14 @@
 <body>
 
   <header>
-    
+
     <div id="rect">
       <!-- the first rectangle-->
     </div>
     <div class="logo">
       <img src="./Pictures/otclogo.svg" alt="logo" />
     </div>
-
+    <!-- navbar-->
     <nav id="rect2">
       <ul id="nav_links">
         <li class="link"><a href="#">
@@ -64,11 +64,11 @@
 
   <section id="slider">
     <a href="#" class="control_next">></a>
-    <a href="#" class="control_prev"><</a> 
-    <ul>
-      <!-- SLIDE 1 -->
+    <a href="#" class="control_prev">
+      <</a> <ul>
+        <!-- SLIDE 1 -->
         <li style="background-image: url(./Pictures/background1.png); background-size: cover;">
-          
+
           <div class="sliderContainer">
             <div class="sliderTitle">MIGRATING TO SQL?</div>
             <div class="sliderText">If you are going to migrate or rewrite your application to use SQL database you
@@ -86,7 +86,7 @@
         <!-- SLIDE 4 -->
         <li style="background: #aaa;">SLIDE 4</li>
 
-    </ul>
+        </ul>
   </section>
 
   <section id="whoWeAre">
@@ -112,9 +112,9 @@
     </div>
 
     <div id="containerTable">
-      <div class="containerOption">MEDIATOR</div>
-      <div class="containerOption">TERMINAL</div>
-      <div class="containerOption">WINFLECTOR</div>
+      <div class="containerOption active" id="op1">MEDIATOR</div>
+      <div class="containerOption" id="op2">TERMINAL</div>
+      <div class="containerOption" id="op3">WINFLECTOR</div>
     </div>
 
     <div id="productContainer">
@@ -131,14 +131,15 @@
       <button class="baseButton">READ MORE</button>
     </div>
   </section>
-  
+
 
 
   <footer>
     <!-- footer -->
   </footer>
 
-
+  <script src="slider.js"></script>
+  <script src="products.js"></script>
 </body>
 
 </html>
