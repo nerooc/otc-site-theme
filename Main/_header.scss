@@ -10,75 +10,65 @@ header {
     width: 100%;
     align-items: center;
     z-index: 1;
-}
 
-#rect {
-    height: 62px;
-    width: 20%;
-    background-color: $base-color;
+    #rect {
+        height: 62px;
+        width: 20%;
+        background-color: $base-color;
 
-}
+    }
 
-.logo {
-    margin: 0 14px 0 25px;
-}
+    .logo {
+        margin: 0 14px 0 25px;
+    }
 
-#rect2 {
-    display: flex;
-    align-items: center;
-    background-color: $base-color;
-    height: 62px;
-    width: 100%;
-}
+    #rect2 {
+        display: flex;
+        align-items: center;
+        background-color: $base-color;
+        height: 62px;
+        width: 100%;
 
-#nav_links {
-    background-color: $base-color;
-    margin-left: 22%;
-    margin-right: 22%;
-    align-items: center;
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
+        #nav_links {
+            background-color: $base-color;
+            margin-left: 22%;
+            margin-right: 22%;
+            align-items: center;
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
 
 
-.link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $base-color;
-    flex-grow: 1;
-    cursor: pointer;
-}
+            .link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $base-color;
+                flex-grow: 1;
+                cursor: pointer;
 
-.supButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 62px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
+                .supButton {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 62px;
+                    color: white;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
 
-    flex-grow: 1;
-}
+                    flex-grow: 1;
+                }
+            }
 
-.link:hover {
-    background-image: linear-gradient($base-color, $gradient);
-}
+            .link:hover {
+                background-image: linear-gradient($base-color, $gradient);
+            }
 
+        }
 
-#contactButton {
-    height: 100%;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-image: linear-gradient($base-color, $gradient);
+    }
 
 }

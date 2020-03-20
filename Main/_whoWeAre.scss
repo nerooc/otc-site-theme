@@ -3,20 +3,21 @@
 
 #whoWeAre {
     padding: 60px 0 60px 0;
-}
 
-#aboutus {
-    width: 805px;
-    margin: 30px auto;
-    line-height: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    color: #7D7D7D;
-    font-size: 15px;
-    text-align: justify;
-}
+    #aboutus {
+        width: 805px;
+        margin: 30px auto;
+        line-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #7D7D7D;
+        font-size: 15px;
+        text-align: justify;
+    }
 
-#whoWeAre .baseButton {
-    margin: auto;
-    margin-top: 40px;
+    .baseButton {
+        margin: auto;
+        margin-top: 40px;
+    }
+
 }
