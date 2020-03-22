@@ -4,10 +4,12 @@
 @import "./base";
 @import "./whoWeAre";
 @import "./products";
+@import "./contact";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
 html {
     color: #2a2a2a;
+    scroll-behavior: smooth;
 }
 
 html,
