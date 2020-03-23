@@ -1,26 +1,59 @@
 @import './variables';
 
 #getInTouch {
+    margin: 60px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     #contactForm {
-        #contactText {}
+        display: flex;
+        flex-direction: column;
 
-        #contactName {}
 
-        #formName {}
+        #contactText {
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 15px;
+            text-align: center;
+            margin: 40px auto 13px;
+        }
 
-        #contactAddress {}
+        #formName {
+            margin-top: 20px;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 13px;
+        }
 
-        #formAddress {}
+        input {
+            font-family: 'Montserrat';
+            margin-top: 5px;
+            width: 100%;
+            font-size: 13px;
+            height: 40px;
+            width: 450px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
 
-        #contactTopic {}
+        input:focus {
+            outline: none;
+        }
 
-        #formTopic {}
 
-        #contactMessage {}
+        #formMessage {
+            height: 300px;
+        }
 
-        #formMessage {}
-
-        #formButton {}
+        .baseButton {
+            background-color: $base-color;
+            width: 100%;
+            margin-top: 50px;
+            align-self: center;
+        }
 
     }
 }
