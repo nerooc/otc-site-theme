@@ -1,0 +1,28 @@
+@import './variables';
+
+#news {
+
+    font-family: 'Montserrat';
+    background-color: #e5e5e5;
+    padding: 60px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #allPosts {
+
+        margin: 24px 0 60px 0;
+        font-size: 14px;
+        color: $base-color;
+        font-weight: 500;
+        text-align: center;
+
+        a {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+}
