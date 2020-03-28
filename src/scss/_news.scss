@@ -25,4 +25,41 @@
         }
     }
 
+    .containerNews {
+        display: flex;
+        width: 990px;
+        height: 460px;
+        justify-content: space-between;
+
+        .row1 {
+            flex-basis: 49%;
+            display: flex;
+            flex-direction: column;
+
+            .winflectorPhoto {
+                width: 100%;
+                flex-basis: 50%;
+            }
+
+            .newsFirst {
+                flex-basis: 50%;
+            }
+        }
+
+        .row2 {
+            flex-basis: 49%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .newsSecond {
+                flex-basis: 49%;
+            }
+
+            .newsThird {
+                flex-basis: 49%;
+            }
+        }
+    }
+
 }
