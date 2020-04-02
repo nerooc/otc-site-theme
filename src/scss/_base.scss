@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 a {
 	text-decoration: none;
 }
@@ -30,13 +34,4 @@ a {
 
 .baseButton:focus {
 	outline: none;
-}
-
-.newsSecond {
-	background-color: white;
-
-}
-
-.newsThird {
-	background-color: white;
 }
