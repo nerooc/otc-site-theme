@@ -4,7 +4,7 @@
 
     font-family: 'Montserrat';
     background-color: #e5e5e5;
-    padding: 60px 0 60px 0;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,6 +105,14 @@
         margin-right: 280px;
 
     }
+}
+
+#news::after {
+    content: "";
+    background-color: #d0d0d0;
+    height: 1px;
+    width: 100%;
+    margin-top: 110px;
 }
 
 /*

@@ -1,13 +1,35 @@
 @import './variables';
 
+
 footer {
-    background-color: #E1E1E1;
+    background-color: #E5E5E5;
+    overflow: hidden;
+
 
     .footerLinks {
+        margin-left: 261px;
         color: #7b7b7b;
         display: flex;
         list-style: none;
-        padding: 30px;
+
+        li {
+            padding-right: 30px;
+            position: relative;
+        }
+
+        .withLine::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: calc(100% - 15px);
+            background-color: #7b7b7b;
+            width: 1px;
+            height: 23px;
+        }
+
+
+
     }
 
 }
