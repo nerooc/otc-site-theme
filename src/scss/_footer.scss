@@ -1,0 +1,13 @@
+@import './variables';
+
+footer {
+    background-color: #E1E1E1;
+
+    .footerLinks {
+        color: #7b7b7b;
+        display: flex;
+        list-style: none;
+        padding: 30px;
+    }
+
+}

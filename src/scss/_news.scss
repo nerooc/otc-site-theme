@@ -43,6 +43,7 @@
 
             .first {
                 flex-basis: 50%;
+                padding-top: 25px;
             }
         }
 
@@ -91,16 +92,17 @@
     .newsDesc {
         font-size: 15px;
         padding-top: 15px;
+        padding-bottom: 55px;
         color: #3d3d3d;
         opacity: 0.67;
     }
 
     .newsButton {
-        font-size: 9px;
+        font-size: 12px;
         color: #AB0039;
-        padding-top: 55px;
         font-weight: bold;
-
+        cursor: pointer;
+        margin-right: 280px;
 
     }
 }
