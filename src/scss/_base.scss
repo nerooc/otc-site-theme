@@ -39,3 +39,7 @@ a {
 .baseButton:focus {
 	outline: none;
 }
+
+.baseButton:hover {
+	background-image: linear-gradient($base-color, $gradient);
+}

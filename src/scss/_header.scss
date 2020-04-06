@@ -39,32 +39,24 @@ header {
             display: flex;
             justify-content: space-between;
             list-style: none;
+            flex-wrap: wrap;
 
-
-            .link {
+            a {
+                font-weight: 600;
                 display: flex;
+                padding: 21px 5px 21px 5px;
                 justify-content: center;
                 align-items: center;
                 background-color: $base-color;
                 flex-grow: 1;
                 cursor: pointer;
+                text-decoration: none;
+                color: white;
+                font-family: 'Montserrat';
 
-                .supButton {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 62px;
-                    color: white;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 14px;
-                    font-weight: 700;
-                    text-transform: uppercase;
-
-                    flex-grow: 1;
-                }
             }
 
-            .link:hover {
+            a:hover {
                 background-image: linear-gradient($base-color, $gradient);
             }
 
