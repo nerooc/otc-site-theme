@@ -1,3 +1,3 @@
-# otc-site
+# Strona OTC S.A.
 
-strona przeznaczona dla spółki akcyjnej OTC S.A. w Krakowie
+Testowy landing page dla spółki akcyjnej OTC S.A. w Krakowie
