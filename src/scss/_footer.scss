@@ -2,11 +2,14 @@
 
 
 footer {
+
     background-color: #E5E5E5;
     overflow: hidden;
-
+    display: flex;
+    padding-bottom: 30px;
 
     .footerLinks {
+        padding-top: 40px;
         margin-left: 261px;
         color: #7b7b7b;
         display: flex;
@@ -29,6 +32,22 @@ footer {
         }
 
 
+
+    }
+
+    .socialMedia {
+
+        padding-top: 37px;
+        display: flex;
+        width: 170px;
+        margin-left: auto;
+        margin-right: 261px;
+        justify-content: space-between;
+
+        img {
+            height: 30px;
+            width: 30px;
+        }
 
     }
 
