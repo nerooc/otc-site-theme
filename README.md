@@ -1,3 +1,4 @@
-# Strona OTC S.A.
+# OTC S.A. website
 
-Testowy landing page dla spółki akcyjnej OTC S.A. w Krakowie
+Test landing page for OTC S.A. joint-stock company in Cracow
+
