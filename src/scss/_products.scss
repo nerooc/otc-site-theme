@@ -36,7 +36,7 @@
         }
     }
 
-    #productContainer {
+    .productContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -47,13 +47,13 @@
         background-color: white;
         margin: 5px auto;
 
-        #productInfo {
+        .productInfo {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
 
-            #productDescription {
+            .productDescription {
                 color: #696969;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 400;
