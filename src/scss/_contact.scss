@@ -46,6 +46,11 @@
 			outline: none;
 		}
 
+		input:focus {
+			border: 2px solid $base-color;
+
+		}
+
 		#formMessage {
 			margin-top: 5px;
 			width: 100%;
@@ -60,6 +65,10 @@
 			resize: vertical;
 			font-family: 'Montserrat';
 
+		}
+
+		#formMessage:focus {
+			border: 2px solid $base-color;
 		}
 
 		#disclaimer {
