@@ -35,17 +35,28 @@ header {
             margin-left: 22%;
             margin-right: 22%;
             align-items: center;
-            width: 60%;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             list-style: none;
             flex-wrap: wrap;
 
+            //navbar
+            @media screen and (max-width: 1920px) {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+
+            @media screen and (max-width: 1300px) {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
             a {
                 font-weight: 600;
                 display: flex;
                 height: 62px;
-                padding: 0 5px 0 5px;
+                padding: 0 1vw 0 1vw;
                 justify-content: center;
                 align-items: center;
                 background-color: $base-color;
@@ -55,6 +66,10 @@ header {
                 color: white;
                 font-family: 'Montserrat';
 
+                @media screen and (min-width: 1000px) and (max-width: 1690px) {
+                    padding: 0 1vw 0 1vw;
+                }
+
             }
 
             a:hover {
@@ -63,6 +78,38 @@ header {
 
         }
 
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+
+    #nav_links {
+        background-color: yellow;
+        margin-left: 22%;
+        margin-right: 22%;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        flex-wrap: wrap;
+
+        a {
+            font-weight: 600;
+            display: flex;
+            height: 62px;
+            padding: 0 3vw 0 3vw;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+            flex-grow: 1;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            font-family: 'Montserrat';
+
+        }
     }
 
 }
