@@ -1,82 +1,77 @@
 <!DOCTYPE html>
 <html id="top">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-		<!-- stylesheet -->
-		<link rel="stylesheet" href="./css/style.css" />
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-		<!-- fonts -->
-		<link
-			href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
-			rel="stylesheet"
-		/>
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="./css/style.css" />
 
-		<!-- scripts -->
-		<script src="https://skrypt-cookies.pl/id/ee83d620f1f50089.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet" />
 
-		<!-- favicon -->
-		<link rel="icon" href="./img/favicon.svg" />
+	<!-- scripts -->
+	<script src="https://skrypt-cookies.pl/id/ee83d620f1f50089.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script
+		src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js">
+	</script>
 
-		<!-- site title -->
-		<title>OTC</title>
-	</head>
+	<!-- favicon -->
+	<link rel="icon" href="./img/favicon.svg" />
 
-	<body>
-		<header>
-			<div id="rect">
-				<!-- the first rectangle-->
+	<!-- site title -->
+	<title>OTC</title>
+</head>
+
+<body>
+	<header>
+		<div id="rect">
+			<!-- the first rectangle-->
+		</div>
+		<a href="#top">
+			<div class="logo">
+				<img src="./img/otclogo.svg" alt="logo" />
 			</div>
-			<a href="#top">
-				<div class="logo">
-					<img src="./img/otclogo.svg" alt="logo" />
-				</div>
-			</a>
-			<!-- navbar-->
-			<nav id="rect2">
-				<div id="nav_links">
-					<a href="#">
-						ABOUT US
-					</a>
-					<a href="#">
-						PRODUCTS
-					</a>
-					<a href="#">
-						PARTNERS
-					</a>
-					<a href="#">
-						HELP
-					</a>
-					<a href="#">
-						DOWNLOAD
-					</a>
-					<a href="#">
-						GET IN TOUCH
-					</a>
-				</div>
-			</nav>
-		</header>
+		</a>
+		<!-- navbar-->
+		<nav id="rect2">
+			<div id="nav_links">
+				<a href="#">
+					ABOUT US
+				</a>
+				<a href="#">
+					PRODUCTS
+				</a>
+				<a href="#">
+					PARTNERS
+				</a>
+				<a href="#">
+					HELP
+				</a>
+				<a href="#">
+					DOWNLOAD
+				</a>
+				<a href="#">
+					GET IN TOUCH
+				</a>
+			</div>
+		</nav>
+	</header>
 
-		<img src="./img/back2top.svg" onclick="topFunction()" id="b2t" />
+	<img src="./img/back2top.svg" onclick="topFunction()" id="b2t" />
 
-		<section id="slider">
-			<a href="#" class="control_next">></a>
-			<a href="#" class="control_prev"> <</a>
-			<ul>
+	<section id="slider">
+		<a href="#" class="control_next">></a>
+		<a href="#" class="control_prev">
+			<</a> <ul>
 				<!-- SLIDE 1 -->
-				<li
-					style="
+				<li style="
 						background-image: url(./img/background1.png);
 						background-size: cover;
-					"
-				>
+					">
 					<div class="sliderContainer">
 						<div class="sliderTitle">MIGRATING TO SQL?</div>
 						<div class="sliderText">
@@ -89,266 +84,291 @@
 				</li>
 
 				<!-- SLIDE 2 -->
-				<li style="background: #aaa;">SLIDE 2</li>
+				<li style="
+						background-image: url(./img/background2.png);
+						background-size: cover;
+					">
+					<div class="sliderContainer">
+						<div class="sliderTitle">HOW TO BECOME A PARTNER?</div>
+						<div class="sliderText">
+							Every company producing Delphi or xBase software may become an OTC partner.
+							For our partners we offer attractive purchase terms and technical support.
+						</div>
+						<button class="baseButton">READ MORE</button>
+					</div>
+				</li>
 
 				<!-- SLIDE 3 -->
-				<li>SLIDE 3</li>
+				<li style="
+						background-image: url(./img/background3.png);
+						background-size: cover;
+					">
+					<div class="sliderContainer">
+						<div class="sliderTitle">THE PRICE CALCULATOR</div>
+						<div class="sliderText">
+							Now you can find out prices of all our software on-line. We have placed the price calculator
+							in "Products/Prices" section. The calculator is available for registered users only.
+						</div>
+						<button class="baseButton">READ MORE</button>
+					</div>
+				</li>
 
 				<!-- SLIDE 4 -->
-				<li style="background: #aaa;">SLIDE 4</li>
-			</ul>
-		</section>
+				<li style="
+						background-image: url(./img/background4.png);
+						background-size: cover;
+					">
+					<div class="sliderContainer">
+						<div class="sliderTitle">WHAT DO WE OFFER?</div>
+						<div class="sliderText">
+							A transition to new and safe data-access technologies for everybody who creates and uses
+							Borland Delphi or xBase applications.
+						</div>
+						<button class="baseButton">READ MORE</button>
+					</div>
+				</li>
+				</ul>
+	</section>
 
-		<section id="whoWeAre">
-			<div class="sectionTitle">
-				WHO WE ARE
+	<section id="whoWeAre">
+		<div class="sectionTitle">
+			WHO WE ARE
+		</div>
+		<div id="aboutus">
+			OTC S.A. company was founded in 1995 by employees of IT and
+			Telecommunication Department of the University of Science and Technology
+			in Cracow. From the beginning of its activities, it has been
+			specializing in creating software tools for relational databases and
+			xBase compilers. The main area of its activity is providing solutions
+			which would enable migration to new, safe and effective technologies for
+			everyone who develops and uses applications written in Borland Delphi,
+			CA-Clipper, Harbour or xHarbour.
+		</div>
+
+		<div class="baseButton">
+			TALK TO OUR TEAM
+		</div>
+	</section>
+
+	<section id="products">
+		<div class="sectionTitle">
+			WHAT WE OFFER
+		</div>
+
+		<div id="containerTable">
+			<div class="containerOption active" id="op1">MEDIATOR</div>
+			<div class="containerOption" id="op2">TERMINAL</div>
+			<div class="containerOption" id="op3">WINFLECTOR</div>
+		</div>
+
+		<div class="productContainer" id="containerMediator">
+			<div class="productInfo">
+				<img class="containerPhoto" src="./img/mediator.png" />
+				<div class="productDescription">
+					Would you like your application written in Delphi, Clipper, Harbour,
+					or xHarbour start to work with the SQL database in an almost magical
+					way? What is more, do you want it to happen in no time and without
+					any effort from your side? If the answer is yes, you have found the
+					right solution - Mediator ISAM server. Mediator has been created in
+					order to provide a fast and unproblematic migration from the
+					obsolete data technologies such as DBF to SQL which is becoming a
+					standard.
+				</div>
 			</div>
-			<div id="aboutus">
-				OTC S.A. company was founded in 1995 by employees of IT and
-				Telecommunication Department of the University of Science and Technology
-				in Cracow. From the beginning of its activities, it has been
-				specializing in creating software tools for relational databases and
-				xBase compilers. The main area of its activity is providing solutions
-				which would enable migration to new, safe and effective technologies for
-				everyone who develops and uses applications written in Borland Delphi,
-				CA-Clipper, Harbour or xHarbour.
+			<button class="baseButton">READ MORE</button>
+		</div>
+
+		<div class="productContainer" style="display: none;" id="containerTerminal">
+			<div class="productInfo">
+				<img class="containerPhoto" src="./img/terminal.png" />
+				<div class="productDescription">
+					Terminal software allows to run Clipper or Harbour (xHarbour)
+					application in a terminal mode. An application working on a server
+					reacts to a user's keystrokes sent from a terminal run on a
+					different PC computer, retaining the ability to run peripheral
+					devices (e.g. printers) connected to the terminal computer. The
+					application also has an ability to call out procedures connected and
+					executed on a user's terminal and to run a file transmission between
+					the application and a terminal.
+				</div>
 			</div>
+			<button class="baseButton">READ MORE</button>
+		</div>
+
+		<div class="productContainer" style="display: none;" id="containerWinflector">
+			<div class="productInfo">
+				<img class="containerPhoto" src="./img/winf.png" />
+				<div class="productDescription">
+					We offer one of the best virtualization software available on the
+					market – Winflector. It allows easy, fast and effective applications
+					sharing over a network, without excessive consumption of computing
+					and network resources. If you are looking for an alternative for
+					Remote Desktop Services (Windows Terminal Services), Citrix XenApp,
+					VNC etc. – Winflector, one of the best low-cost and efficient
+					virtualization software, is for you.
+				</div>
+			</div>
+			<button class="baseButton">READ MORE</button>
+		</div>
+	</section>
+
+	<section id="getInTouch">
+		<div class="sectionTitle">
+			GET IN TOUCH
+		</div>
+		<div id="contactForm">
+			<div id="contactText">
+				Got a question? We’d love to hear from you. Send us a <br />
+				message and we will repsond as soon as possible.
+			</div>
+
+			<div id="formName">
+				Name
+			</div>
+
+			<input placeholder="" />
+
+			<div id="formName">
+				E-mail address
+			</div>
+
+			<input placeholder="" />
+
+			<div id="formName">
+				Topic
+			</div>
+
+			<input placeholder="" />
+
+			<div id="formName">
+				Message*
+			</div>
+
+			<textarea placeholder="" id="formMessage" maxlength="400"></textarea>
+
+			<div id="disclaimer">*The maximum number of characters: 400</div>
 
 			<div class="baseButton">
-				TALK TO OUR TEAM
+				SUBMIT
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section id="products">
-			<div class="sectionTitle">
-				WHAT WE OFFER
-			</div>
+	<section id="news">
+		<div class="sectionTitle">
+			LATEST NEWS AND INSIGHTS
+		</div>
 
-			<div id="containerTable">
-				<div class="containerOption active" id="op1">MEDIATOR</div>
-				<div class="containerOption" id="op2">TERMINAL</div>
-				<div class="containerOption" id="op3">WINFLECTOR</div>
-			</div>
+		<div id="allPosts">
+			<a href="#">
+				ALL POSTS >
+			</a>
+		</div>
 
-			<div class="productContainer" id="containerMediator">
-				<div class="productInfo">
-					<img class="containerPhoto" src="./img/mediator.png" />
-					<div class="productDescription">
-						Would you like your application written in Delphi, Clipper, Harbour,
-						or xHarbour start to work with the SQL database in an almost magical
-						way? What is more, do you want it to happen in no time and without
-						any effort from your side? If the answer is yes, you have found the
-						right solution - Mediator ISAM server. Mediator has been created in
-						order to provide a fast and unproblematic migration from the
-						obsolete data technologies such as DBF to SQL which is becoming a
-						standard.
+		<div class="containerNews">
+			<div class="row1">
+				<img src="./img/winflector.png" alt="winflector" class="winflectorPhoto" />
+				<div class="news first">
+					<span>MEDIATOR</span>
+					<div class="newsTitle">
+						Mediator package - 4.3.3.1
 					</div>
-				</div>
-				<button class="baseButton">READ MORE</button>
-			</div>
-
-			<div
-				class="productContainer"
-				style="display: none;"
-				id="containerTerminal"
-			>
-				<div class="productInfo">
-					<img class="containerPhoto" src="./img/terminal.png" />
-					<div class="productDescription">
-						Terminal software allows to run Clipper or Harbour (xHarbour)
-						application in a terminal mode. An application working on a server
-						reacts to a user's keystrokes sent from a terminal run on a
-						different PC computer, retaining the ability to run peripheral
-						devices (e.g. printers) connected to the terminal computer. The
-						application also has an ability to call out procedures connected and
-						executed on a user's terminal and to run a file transmission between
-						the application and a terminal.
+					<div class="newsDesc">
+						We have released a new version of Mediator package - 4.3.3.1.
 					</div>
-				</div>
-				<button class="baseButton">READ MORE</button>
-			</div>
-
-			<div
-				class="productContainer"
-				style="display: none;"
-				id="containerWinflector"
-			>
-				<div class="productInfo">
-					<img class="containerPhoto" src="./img/winf.png" />
-					<div class="productDescription">
-						We offer one of the best virtualization software available on the
-						market – Winflector. It allows easy, fast and effective applications
-						sharing over a network, without excessive consumption of computing
-						and network resources. If you are looking for an alternative for
-						Remote Desktop Services (Windows Terminal Services), Citrix XenApp,
-						VNC etc. – Winflector, one of the best low-cost and efficient
-						virtualization software, is for you.
-					</div>
-				</div>
-				<button class="baseButton">READ MORE</button>
-			</div>
-		</section>
-
-		<section id="getInTouch">
-			<div class="sectionTitle">
-				GET IN TOUCH
-			</div>
-			<div id="contactForm">
-				<div id="contactText">
-					Got a question? We’d love to hear from you. Send us a <br />
-					message and we will repsond as soon as possible.
-				</div>
-
-				<div id="formName">
-					Name
-				</div>
-
-				<input placeholder="" />
-
-				<div id="formName">
-					E-mail address
-				</div>
-
-				<input placeholder="" />
-
-				<div id="formName">
-					Topic
-				</div>
-
-				<input placeholder="" />
-
-				<div id="formName">
-					Message*
-				</div>
-
-				<textarea placeholder="" id="formMessage" maxlength="400"></textarea>
-
-				<div id="disclaimer">*The maximum number of characters: 400</div>
-
-				<div class="baseButton">
-					SUBMIT
-				</div>
-			</div>
-		</section>
-
-		<section id="news">
-			<div class="sectionTitle">
-				LATEST NEWS AND INSIGHTS
-			</div>
-
-			<div id="allPosts">
-				<a href="#">
-					ALL POSTS >
-				</a>
-			</div>
-
-			<div class="containerNews">
-				<div class="row1">
-					<img
-						src="./img/winflector.png"
-						alt="winflector"
-						class="winflectorPhoto"
-					/>
-					<div class="news first">
-						<span>MEDIATOR</span>
-						<div class="newsTitle">
-							Mediator package - 4.3.3.1
-						</div>
-						<div class="newsDesc">
-							We have released a new version of Mediator package - 4.3.3.1.
-						</div>
-						<div class="newsButton">
-							LEARN MORE >
-						</div>
-					</div>
-				</div>
-
-				<div class="row2">
-					<div class="news second">
-						<span>MEDIATOR</span>
-						<div class="newsTitle">
-							Mediator package - 4.3.3.1
-						</div>
-						<div class="newsDesc">
-							We have released a new version of Mediator package - 4.3.3.1.
-						</div>
-						<div class="newsButton">
-							LEARN MORE >
-						</div>
-					</div>
-
-					<div class="news third">
-						<span>MEDIATOR</span>
-						<div class="newsTitle">
-							Mediator package - 4.3.3.1
-						</div>
-						<div class="newsDesc">
-							We have released a new version of Mediator package - 4.3.3.1.
-						</div>
-						<div class="newsButton">
-							LEARN MORE >
-						</div>
+					<div class="newsButton">
+						LEARN MORE >
 					</div>
 				</div>
 			</div>
-		</section>
 
-		<footer>
-			<div class="linksFoot">
-				<ul class="footerLinks">
-					<li class="withLine">
-						© 2019 OTC S. A. All Rights Reserved.
-					</li>
+			<div class="row2">
+				<div class="news second">
+					<span>MEDIATOR</span>
+					<div class="newsTitle">
+						Mediator package - 4.3.3.1
+					</div>
+					<div class="newsDesc">
+						We have released a new version of Mediator package - 4.3.3.1.
+					</div>
+					<div class="newsButton">
+						LEARN MORE >
+					</div>
+				</div>
 
-					<li class="withLine">
-						<a href="#">Sitemap</a>
-					</li>
-
-					<li>
-						<a href="#">Privacy Policy</a>
-					</li>
-				</ul>
-
-				<div class="socialMedia">
-					<a href="#"><img id="fb" src="img/fb.svg" /></a>
-					<a href="#"><img id="linkedin" src="img/linkedin.svg" /></a>
-					<a href="#"><img id="twit" src="img/twitter.svg" /></a>
-					<a href="#"><img id="yt" src="img/yt.svg" /></a>
+				<div class="news third">
+					<span>MEDIATOR</span>
+					<div class="newsTitle">
+						Mediator package - 4.3.3.1
+					</div>
+					<div class="newsDesc">
+						We have released a new version of Mediator package - 4.3.3.1.
+					</div>
+					<div class="newsButton">
+						LEARN MORE >
+					</div>
 				</div>
 			</div>
+		</div>
+	</section>
 
-			<div class="contactFoot">
-				<div class="text">
-					<span>ADDRESS</span><br />
-					OTC S.A. <br />
-					ul. Chelmonskiego 248 <br />
-					31-348 Cracow <br />
-					Poland <br />
-				</div>
-				<div class="text">
-					<span>TELEPHONE</span><br />
-					+48 12 6263636
-				</div>
-				<div class="text">
-					<span>FAX</span><br />
-					+48 12 6263638
-				</div>
-				<div class="text">
-					<span>MOBILE</span><br />
-					+48 12 6263638
-				</div>
-				<div class="text">
-					<span>E-MAIL</span><br />
-					information: office@otc.pl <br />
-					technical support: support@otc.pl <br />
-					orders: orders@otc.pl <br />
-					webmaster: webmaster@otc.pl <br />
-				</div>
+	<footer>
+		<div class="linksFoot">
+			<ul class="footerLinks">
+				<li class="withLine">
+					© 2019 OTC S. A. All Rights Reserved.
+				</li>
+
+				<li class="withLine">
+					<a href="#">Sitemap</a>
+				</li>
+
+				<li>
+					<a href="#">Privacy Policy</a>
+				</li>
+			</ul>
+
+			<div class="socialMedia">
+				<a href="#"><img id="fb" src="img/fb.svg" /></a>
+				<a href="#"><img id="linkedin" src="img/linkedin.svg" /></a>
+				<a href="#"><img id="twit" src="img/twitter.svg" /></a>
+				<a href="#"><img id="yt" src="img/yt.svg" /></a>
 			</div>
-		</footer>
+		</div>
 
-		<script src="./js/products.js"></script>
-		<script src="./js/slider.js"></script>
-		<script src="./js/contact.js"></script>
-	</body>
+		<div class="contactFoot">
+			<div class="text">
+				<span>ADDRESS</span><br />
+				OTC S.A. <br />
+				ul. Chelmonskiego 248 <br />
+				31-348 Cracow <br />
+				Poland <br />
+			</div>
+			<div class="text">
+				<span>TELEPHONE</span><br />
+				+48 12 6263636
+			</div>
+			<div class="text">
+				<span>FAX</span><br />
+				+48 12 6263638
+			</div>
+			<div class="text">
+				<span>MOBILE</span><br />
+				+48 12 6263638
+			</div>
+			<div class="text">
+				<span>E-MAIL</span><br />
+				information: office@otc.pl <br />
+				technical support: support@otc.pl <br />
+				orders: orders@otc.pl <br />
+				webmaster: webmaster@otc.pl <br />
+			</div>
+		</div>
+	</footer>
+
+	<script src="./js/products.js"></script>
+	<script src="./js/slider.js"></script>
+	<script src="./js/contact.js"></script>
+</body>
+
 </html>
