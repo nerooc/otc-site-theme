@@ -1,7 +1,5 @@
-> media queries for making the window smaller
-> media queries for making the window bigger (max-width etc.)
-> change into html5 tags
-> use more animations
-> pixel-perfect
-> some tuts in bookmarks
-> move ya ass
+TECH STACK:
+- HTML
+- CSS (SASS)
+- JS
+- Glide.js
