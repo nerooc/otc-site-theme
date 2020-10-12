@@ -38,7 +38,7 @@ option3.addEventListener("click", function () {
 });
 
 //BACK2TOP BUTTON
-b2t = document.getElementById("b2t");
+b2t = document.querySelector(".back-to-top");
 
 
 window.onscroll = function () {

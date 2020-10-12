@@ -1,25 +1,26 @@
 @import './variables';
+@import './Mixins/mixins';
 
-#getInTouch {
+.contact {
 	padding: 60px 0 60px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
-	#contactForm {
+	&__form {
 		display: flex;
 		flex-direction: column;
 		font-family: 'Montserrat';
 
-		#contactText {
+		&__text {
 			font-weight: 400;
 			font-size: 15px;
 			text-align: center;
 			margin: 40px auto 13px;
 		}
 
-		#formName {
+		&__name {
 			margin-top: 20px;
 			font-weight: 400;
 			font-size: 14px;
@@ -40,18 +41,17 @@
 			font-family: 'Montserrat';
 			color: black;
 
+			&:focus {
+				border: 2px solid $base-color;
+			}
+
 		}
 
 		*:focus {
 			outline: none;
 		}
 
-		input:focus {
-			border: 2px solid $base-color;
-
-		}
-
-		#formMessage {
+		&__message {
 			margin-top: 5px;
 			width: 100%;
 			font-size: 13px;
@@ -65,23 +65,23 @@
 			resize: vertical;
 			font-family: 'Montserrat';
 
+			&:focus {
+				border: 2px solid $base-color;
+			}
 		}
 
-		#formMessage:focus {
-			border: 2px solid $base-color;
-		}
-
-		#disclaimer {
+		&__disclaimer {
 			text-align: right;
 			font-size: 12px;
 			margin-top: 7px;
 		}
+	}
 
-		.baseButton {
-			background-color: $base-color;
-			width: 100%;
-			margin-top: 50px;
-			align-self: center;
-		}
+	&__button {
+		@include button;
+		background-color: $base-color;
+		width: 100%;
+		margin-top: 50px;
+		align-self: center;
 	}
 }

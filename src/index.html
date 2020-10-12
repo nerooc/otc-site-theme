@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html id="top">
 
 <head>
 	<meta charset="utf-8" />
@@ -27,18 +26,19 @@
 </head>
 
 <body>
-	<header>
-		<div id="rect">
+	<header class="header">
+		<div class="header__rect1">
 			<!-- the first rectangle-->
 		</div>
-		<a href="#top">
-			<div class="logo">
+		<a href="#">
+			<div class="header__logo">
 				<img src="./img/otclogo.svg" alt="logo" />
 			</div>
 		</a>
 		<!-- navbar-->
-		<nav id="rect2">
-			<div id="nav_links">
+
+		<nav class="header__rect2">
+			<div class="header__links">
 				<a href="#">
 					ABOUT US
 				</a>
@@ -56,27 +56,28 @@
 				</a>
 			</div>
 		</nav>
+
 	</header>
 
-	<img src="./img/back2top.svg" onclick="topFunction()" id="b2t" />
+	<img src="./img/back2top.svg" onclick="topFunction()" class="back-to-top" />
 
-	<section id="slider">
-		<a class="control_next">></a>
-		<a class="control_prev"><</a> 
+	<section class="slider">
+		<a class="slider__control--next">></a>
+		<a class="slider__control--prev"><</a> 
 		<ul>
 				<!-- SLIDE 1 -->
 				<li style="
 						background-image: url(./img/background1.png);
 						background-size: cover;
 					">
-					<div class="sliderContainer">
-						<div class="sliderTitle">MIGRATING TO SQL?</div>
-						<div class="sliderText">
+					<div class="slider__container">
+						<div class="slider__container__title">MIGRATING TO SQL?</div>
+						<div class="slider__container__text">
 							If you are going to migrate or rewrite your application to use SQL
 							database you definitely need to read about our Mediator ISAM
 							Server.
 						</div>
-						<button class="baseButton">READ MORE</button>
+						<button class="slider__container__button">READ MORE</button>
 					</div>
 				</li>
 
@@ -85,13 +86,13 @@
 						background-image: url(./img/background2.png);
 						background-size: cover;
 					">
-					<div class="sliderContainer">
-						<div class="sliderTitle">HOW TO BECOME A PARTNER?</div>
-						<div class="sliderText">
+					<div class="slider__container">
+						<div class="slider__container__title">HOW TO BECOME A PARTNER?</div>
+						<div class="slider__container__text">
 							Every company producing Delphi or xBase software may become an OTC partner.
 							For our partners we offer attractive purchase terms and technical support.
 						</div>
-						<button class="baseButton">READ MORE</button>
+						<button class="slider__container__button">READ MORE</button>
 					</div>
 				</li>
 
@@ -100,13 +101,13 @@
 						background-image: url(./img/background3.png);
 						background-size: cover;
 					">
-					<div class="sliderContainer">
-						<div class="sliderTitle">THE PRICE CALCULATOR</div>
-						<div class="sliderText">
+					<div class="slider__container">
+						<div class="slider__container__title">THE PRICE CALCULATOR</div>
+						<div class="slider__container__text">
 							Now you can find out prices of all our software on-line. We have placed the price calculator
 							in "Products/Prices" section. The calculator is available for registered users only.
 						</div>
-						<button class="baseButton">READ MORE</button>
+						<button class="slider__container__button">READ MORE</button>
 					</div>
 				</li>
 
@@ -115,23 +116,23 @@
 						background-image: url(./img/background4.png);
 						background-size: cover;
 					">
-					<div class="sliderContainer">
-						<div class="sliderTitle">WHAT DO WE OFFER?</div>
-						<div class="sliderText">
+					<div class="slider__container">
+						<div class="slider__container__title">WHAT DO WE OFFER?</div>
+						<div class="slider__container__text">
 							A transition to new and safe data-access technologies for everybody who creates and uses
 							Borland Delphi or xBase applications.
 						</div>
-						<button class="baseButton">READ MORE</button>
+						<button class="slider__container__button">READ MORE</button>
 					</div>
 				</li>
 			</ul>
 	</section>
 
-	<section id="whoWeAre">
-		<div class="sectionTitle">
+	<section class="about-us">
+		<div class="section-title">
 			WHO WE ARE
 		</div>
-		<div id="aboutus">
+		<div class="about-us__text">
 			OTC S.A. company was founded in 1995 by employees of IT and
 			Telecommunication Department of the University of Science and Technology
 			in Cracow. From the beginning of its activities, it has been
@@ -142,26 +143,26 @@
 			CA-Clipper, Harbour or xHarbour.
 		</div>
 
-		<div class="baseButton">
+		<div class="about-us__button">
 			TALK TO OUR TEAM
 		</div>
 	</section>
 
-	<section id="products">
-		<div class="sectionTitle">
+	<section class="products">
+		<div class="section-title">
 			WHAT WE OFFER
 		</div>
 
-		<div id="containerTable">
-			<div class="containerOption active" id="op1">MEDIATOR</div>
-			<div class="containerOption" id="op2">TERMINAL</div>
-			<div class="containerOption" id="op3">WINFLECTOR</div>
+		<div class="products__options">
+			<div class="products__options__unit active" id="op1">MEDIATOR</div>
+			<div class="products__options__unit" id="op2">TERMINAL</div>
+			<div class="products__options__unit" id="op3">WINFLECTOR</div>
 		</div>
 
-		<div class="productContainer" id="containerMediator">
-			<div class="productInfo">
-				<img class="containerPhoto" src="./img/mediator.png" />
-				<div class="productDescription">
+		<div class="products__container" id="containerMediator">
+			<div class="products__container__info">
+				<img class="products__container__photo" src="./img/mediator.png" />
+				<div class="products__container__description">
 					Would you like your application written in Delphi, Clipper, Harbour,
 					or xHarbour start to work with the SQL database in an almost magical
 					way? What is more, do you want it to happen in no time and without
@@ -172,13 +173,13 @@
 					standard.
 				</div>
 			</div>
-			<button class="baseButton">READ MORE</button>
+			<button class="products__button">READ MORE</button>
 		</div>
 
-		<div class="productContainer" style="display: none;" id="containerTerminal">
-			<div class="productInfo">
-				<img class="containerPhoto" src="./img/terminal.png" />
-				<div class="productDescription">
+		<div class="products__container" style="display: none;" id="containerTerminal">
+			<div class="products__container__info">
+				<img class="products__container__photo" src="./img/terminal.png" />
+				<div class="products__container__description">
 					Terminal software allows to run Clipper or Harbour (xHarbour)
 					application in a terminal mode. An application working on a server
 					reacts to a user's keystrokes sent from a terminal run on a
@@ -189,13 +190,13 @@
 					the application and a terminal.
 				</div>
 			</div>
-			<button class="baseButton">READ MORE</button>
+			<button class="products__button">READ MORE</button>
 		</div>
 
-		<div class="productContainer" style="display: none;" id="containerWinflector">
-			<div class="productInfo">
-				<img class="containerPhoto" src="./img/winf.png" />
-				<div class="productDescription">
+		<div class="products__container" style="display: none;" id="containerWinflector">
+			<div class="products__container__info">
+				<img class="products__container__photo" src="./img/winf.png" />
+				<div class="products__container__description">
 					We offer one of the best virtualization software available on the
 					market – Winflector. It allows easy, fast and effective applications
 					sharing over a network, without excessive consumption of computing
@@ -205,103 +206,103 @@
 					virtualization software, is for you.
 				</div>
 			</div>
-			<button class="baseButton">READ MORE</button>
+			<button class="products__button">READ MORE</button>
 		</div>
 	</section>
 
-	<section id="getInTouch">
-		<div class="sectionTitle">
+	<section class="contact">
+		<div class="section-title">
 			GET IN TOUCH
 		</div>
-		<div id="contactForm">
-			<div id="contactText">
+		<div class="contact__form">
+			<div class="contact__form__text">
 				Got a question? We’d love to hear from you. Send us a <br />
 				message and we will repsond as soon as possible.
 			</div>
 
-			<div id="formName">
+			<div class="contact__form__name">
 				Name
 			</div>
 
 			<input placeholder="" />
 
-			<div id="formName">
+			<div class="contact__form__name">
 				E-mail address
 			</div>
 
 			<input placeholder="" />
 
-			<div id="formName">
+			<div class="contact__form__name">
 				Topic
 			</div>
 
 			<input placeholder="" />
 
-			<div id="formName">
+			<div class="contact__form__name">
 				Message*
 			</div>
 
-			<textarea placeholder="" id="formMessage" maxlength="400"></textarea>
+			<textarea placeholder="" class="contact__form__message" maxlength="400"></textarea>
 
-			<div id="disclaimer">*The maximum number of characters: 400</div>
+			<div class="contact__form__disclaimer">*The maximum number of characters: 400</div>
 
-			<div class="baseButton">
+			<div class="contact__button">
 				SUBMIT
 			</div>
 		</div>
 	</section>
 
-	<section id="news">
-		<div class="sectionTitle">
+	<section class="news">
+		<div class="section-title">
 			LATEST NEWS AND INSIGHTS
 		</div>
 
-		<div id="allPosts">
+		<div class="news__posts">
 			<a href="#">
 				ALL POSTS >
 			</a>
 		</div>
 
-		<div class="containerNews">
-			<div class="row1">
-				<img src="./img/winflector.png" alt="winflector" class="winflectorPhoto" />
-				<div class="news first">
+		<div class="news__container">
+			<div class="news__container__row1">
+				<img src="./img/winflector.png" alt="winflector" class="news__container__photo" />
+				<div class="news__block first">
 					<span>MEDIATOR</span>
-					<div class="newsTitle">
+					<div class="news__block__title">
 						Mediator package - 4.3.3.1
 					</div>
-					<div class="newsDesc">
+					<div class="news__block__desc">
 						We have released a new version of Mediator package - 4.3.3.1.
 					</div>
-					<div class="newsButton">
+					<div class="news__block__button">
 						LEARN MORE >
 					</div>
 				</div>
 			</div>
 
-			<div class="row2">
-				<div class="news second">
+			<div class="news__container__row2">
+				<div class="news__block second">
 					<span>MEDIATOR</span>
-					<div class="newsTitle">
+					<div class="news__block__title">
 						Mediator package - 4.3.3.1
 					</div>
-					<div class="newsDesc">
+					<div class="news__block__desc">
 						We have released a new version of Mediator package - 4.3.3.1.
 					</div>
-					<div class="newsButton">
+					<div class="news__block__button">
 						LEARN MORE >
 					</div>
 				</div>
 
-				<div class="news third">
+				<div class="news__block third">
 					<span>MEDIATOR</span>
-					<div class="newsTitle">
+					<div class="news__block__title">
 						Mediator package - 4.3.3.1
 					</div>
-					<div class="newsDesc">
+					<div class="news__block__desc">
 						We have released a new version of Mediator package - 4.3.3.1.
 					</div>
-					<div class="newsButton">
+					<div class="news__block__button">
 						LEARN MORE >
 					</div>
 				</div>
@@ -309,14 +310,14 @@
 		</div>
 	</section>
 
-	<footer>
-		<div class="linksFoot">
-			<ul class="footerLinks">
-				<li class="withLine">
+	<footer class="footer">
+		<div class="footer__container">
+			<ul class="footer__links">
+				<li class="with-line">
 					© 2019 OTC S. A. All Rights Reserved.
 				</li>
 
-				<li class="withLine">
+				<li class="with-line">
 					<a href="#">Sitemap</a>
 				</li>
 
@@ -325,7 +326,7 @@
 				</li>
 			</ul>
 
-			<div class="socialMedia">
+			<div class="footer__social">
 				<a href="#"><img id="fb" src="img/fb.svg" /></a>
 				<a href="#"><img id="linkedin" src="img/linkedin.svg" /></a>
 				<a href="#"><img id="twit" src="img/twitter.svg" /></a>
@@ -333,27 +334,27 @@
 			</div>
 		</div>
 
-		<div class="contactFoot">
-			<div class="text">
+		<div class="footer__contact">
+			<div class="footer__contact__text">
 				<span>ADDRESS</span><br />
 				OTC S.A. <br />
 				ul. Chelmonskiego 248 <br />
 				31-348 Cracow <br />
 				Poland <br />
 			</div>
-			<div class="text">
+			<div class="footer__contact__text">
 				<span>TELEPHONE</span><br />
 				+48 12 6263636
 			</div>
-			<div class="text">
+			<div class="footer__contact__text">
 				<span>FAX</span><br />
 				+48 12 6263638
 			</div>
-			<div class="text">
+			<div class="footer__contact__text">
 				<span>MOBILE</span><br />
 				+48 12 6263638
 			</div>
-			<div class="text">
+			<div class="footer__contact__text">
 				<span>E-MAIL</span><br />
 				information: office@otc.pl <br />
 				technical support: support@otc.pl <br />

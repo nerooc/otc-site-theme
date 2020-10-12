@@ -1,7 +1,7 @@
 @import './variables';
 
 
-header {
+.header {
     display: flex;
     margin-top: 32px;
     position: absolute;
@@ -11,7 +11,7 @@ header {
     align-items: center;
     z-index: 1;
 
-    #rect {
+    &__rect1 {
         height: 62px;
         width: 20%;
         background-color: $base-color;
@@ -20,12 +20,12 @@ header {
         box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
     }
 
-    .logo {
+    &__logo {
         margin: 0 14px 0 25px;
         cursor: pointer;
     }
 
-    #rect2 {
+    &__rect2 {
         display: flex;
         align-items: center;
         background-color: $base-color;
@@ -35,7 +35,18 @@ header {
         -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
         -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
         box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
-
+    }
+    
+    &__links {
+        background-color: $base-color;
+        margin-left: 22%;
+        margin-right: 22%;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        flex-wrap: wrap;
 
         a {
             font-size: 13px;
@@ -51,48 +62,14 @@ header {
             color: white;
             font-family: 'Montserrat';
 
+            &:hover {
+                background-image: linear-gradient($base-color, $gradient);
+            }
+
             @media screen and (min-width: 1000px) and (max-width: 1690px) {
                 padding: 0 1vw 0 1vw;
             }
-
-        }
-
-        a:hover {
-            background-image: linear-gradient($base-color, $gradient);
-        }
-
-    }
-
-}
-
-@media screen and (min-width: 500px) {
-
-    #nav_links {
-        background-color: $base-color;
-        margin-left: 22%;
-        margin-right: 22%;
-        align-items: center;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        flex-wrap: wrap;
-
-        a {
-            font-weight: 600;
-            display: flex;
-            height: 62px;
-            padding: 0 3vw 0 3vw;
-            justify-content: center;
-            align-items: center;
-            background-color: yellow;
-            flex-grow: 1;
-            cursor: pointer;
-            text-decoration: none;
-            color: white;
-            font-family: 'Montserrat';
-
         }
     }
-
 }
+

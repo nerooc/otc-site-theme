@@ -1,7 +1,6 @@
 @import './variables';
 
-#news {
-
+.news {
     font-family: 'Montserrat';
     background-color: #e5e5e5;
     padding-top: 60px;
@@ -10,9 +9,8 @@
     justify-content: center;
     align-items: center;
 
-    #allPosts {
-
-        margin: 24px 0 60px 0;
+    &__posts {
+        margin: 24px 0 60px;
         font-size: 14px;
         color: $base-color;
         font-weight: 500;
@@ -25,21 +23,16 @@
         }
     }
 
-    .containerNews {
+    &__container {
         display: flex;
         width: 990px;
         height: 460px;
         justify-content: space-between;
 
-        .row1 {
+        &__row1 {
             flex-basis: 49%;
             display: flex;
             flex-direction: column;
-
-            .winflectorPhoto {
-                width: 100%;
-                flex-basis: 50%;
-            }
 
             .first {
                 flex-basis: 50%;
@@ -47,7 +40,12 @@
             }
         }
 
-        .row2 {
+        &__photo {
+            width: 100%;
+            flex-basis: 50%;
+        }
+
+        &__row2 {
             flex-basis: 49%;
             display: flex;
             flex-direction: column;
@@ -62,57 +60,53 @@
             }
         }
     }
-
-}
-
-
-.news {
-    background-color: white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 18px 50px 18px 50px;
-    display: flex;
-    flex-direction: column;
-    transition: 0.2s;
-
-    //  cursor: pointer;
-    span {
-        font-size: 9px;
-        color: #D0D0D0;
-        font-weight: bold;
-
+    &:after {
+        content: "";
+        background-color: #d0d0d0;
+        height: 1px;
+        width: 100%;
+        margin-top: 110px;
     }
 
-    .newsTitle {
-        font-size: 28px;
-        color: #3d3d3d;
-        padding-top: 10px;
-        font-weight: bold;
+    &__block {
+        background-color: white;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 18px 50px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.2s;
+
+        //  cursor: pointer;
+        span {
+            font-size: 9px;
+            color: #D0D0D0;
+            font-weight: bold;
+        }
+
+        &__title {
+            font-size: 28px;
+            color: #3d3d3d;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+        &__desc {
+            font-size: 15px;
+            padding-top: 15px;
+            padding-bottom: 55px;
+            color: #3d3d3d;
+            opacity: 0.67;
+        }
+
+        &__button {
+            font-size: 12px;
+            color: #AB0039;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 280px;
+
+        }
     }
-
-    .newsDesc {
-        font-size: 15px;
-        padding-top: 15px;
-        padding-bottom: 55px;
-        color: #3d3d3d;
-        opacity: 0.67;
-    }
-
-    .newsButton {
-        font-size: 12px;
-        color: #AB0039;
-        font-weight: bold;
-        cursor: pointer;
-        margin-right: 280px;
-
-    }
-}
-
-#news::after {
-    content: "";
-    background-color: #d0d0d0;
-    height: 1px;
-    width: 100%;
-    margin-top: 110px;
 }
 
 /*

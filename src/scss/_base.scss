@@ -8,7 +8,7 @@ a {
 	text-decoration: none;
 }
 
-.sectionTitle {
+.section-title {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	color: #3d3d3d;
@@ -16,41 +16,3 @@ a {
 	text-align: center;
 }
 
-.baseButton {
-	color: white;
-	font-family: 'Montserrat', sans-serif;
-	border-radius: 20px;
-	font-size: 14px;
-	font-weight: 600;
-	text-transform: uppercase;
-	background-image: linear-gradient($base-color 1.9%, $gradient 320.86%);
-	width: 222px;
-	height: 40px;
-	border: none;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-}
-
-.baseButton:focus {
-	outline: none;
-}
-
-.baseButton:hover {
-	background-image: linear-gradient($base-color, $gradient);
-}
-
-#b2t {
-	opacity: 0;
-	transition: 0.2s;
-	position: fixed;
-	height: 60px;
-	width: 60px;
-	bottom: 50px;
-	right: 50px;
-	z-index: 99;
-	cursor: pointer;
-
-}

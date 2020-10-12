@@ -1,20 +1,20 @@
 @import './variables';
+@import './Mixins/mixins';
 
 
-
-#products {
+.products {
     background-color: #e5e5e5;
     height: 50%;
     padding: 60px 0 60px 0;
 
-    #containerTable {
+    &__options {
         display: flex;
         flex-direction: row;
         margin: 40px auto 13px;
         width: 680px;
         height: 40px;
 
-        .containerOption {
+        &__unit {
             color: #696969;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
@@ -29,14 +29,14 @@
 
         }
 
-        .containerOption.active {
+        &__unit.active {
             color: $base-color;
             border-bottom: 2px solid $base-color;
             cursor: pointer;
         }
     }
 
-    .productContainer {
+    &__container {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -47,32 +47,34 @@
         background-color: white;
         margin: 5px auto;
 
-        .productInfo {
+        &__info {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-
-            .containerPhoto {
-                width: 160px;
-                height: 190px;
-            }
-
-            .productDescription {
-                color: #696969;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 24px;
-                margin-left: 30px;
-                width: 490px;
-                height: 190px;
-                text-align: justify;
-            }
+        }
+        
+        &__photo {
+            width: 160px;
+            height: 190px;
         }
 
-        .baseButton {
-            margin-top: 35px;
+        &__description {
+            color: #696969;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            margin-left: 30px;
+            width: 490px;
+            height: 190px;
+            text-align: justify;
         }
+        
+    }
+
+    &__button {
+        @include button;
+        margin-top: 35px;
     }
 }
