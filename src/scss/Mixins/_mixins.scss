@@ -28,7 +28,7 @@
     background-size: 100%;
     background-image: linear-gradient($start, $end);
     position: relative;
-    z-index: 100;
+    z-index: 1;
     &:before {
         background-image: linear-gradient($end, $start);
         content: "";
