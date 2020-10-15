@@ -12,6 +12,7 @@
 		display: flex;
 		flex-direction: column;
 		font-family: 'Montserrat';
+		width: 500px;
 
 		&__text {
 			font-weight: 400;
@@ -32,7 +33,6 @@
 			font-size: 13px;
 			font-weight: 400;
 			height: 40px;
-			width: 450px;
 			border: 1px solid rgba(0, 0, 0, 0.4);
 			box-sizing: border-box;
 			border-radius: 10px;
@@ -56,7 +56,6 @@
 			width: 100%;
 			font-size: 13px;
 			height: 200px;
-			width: 450px;
 			border: 1px solid rgba(0, 0, 0, 0.4);
 			box-sizing: border-box;
 			border-radius: 10px;

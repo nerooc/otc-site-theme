@@ -192,15 +192,17 @@
 
         <div class="products__container" id="containerMediator">
             <div class="products__container__info">
-                <img class="products__container__photo" src="./img/mediator.png"/>
-                <div class="products__container__description">
-                    Would you like your application written in Delphi, Clipper, Harbour, or xHarbour
-                    start to work with the SQL database in an almost magical way? What is more, do
-                    you want it to happen in no time and without any effort from your side? If the
-                    answer is yes, you have found the right solution - Mediator ISAM server.
-                    Mediator has been created in order to provide a fast and unproblematic migration
-                    from the obsolete data technologies such as DBF to SQL which is becoming a
-                    standard.
+                <div class="products__container__flex">
+                    <img class="products__container__photo" src="./img/mediator.png"/>
+                    <div class="products__container__description">
+                        Would you like your application written in Delphi, Clipper, Harbour, or xHarbour
+                        start to work with the SQL database in an almost magical way? What is more, do
+                        you want it to happen in no time and without any effort from your side? If the
+                        answer is yes, you have found the right solution - Mediator ISAM server.
+                        Mediator has been created in order to provide a fast and unproblematic migration
+                        from the obsolete data technologies such as DBF to SQL which is becoming a
+                        standard.
+                    </div>
                 </div>
             </div>
             <button class="products__button">READ MORE</button>
@@ -208,15 +210,17 @@
 
         <div class="products__container" style="display: none;" id="containerTerminal">
             <div class="products__container__info">
-                <img class="products__container__photo" src="./img/terminal.png"/>
-                <div class="products__container__description">
-                    Terminal software allows to run Clipper or Harbour (xHarbour) application in a
-                    terminal mode. An application working on a server reacts to a user's keystrokes
-                    sent from a terminal run on a different PC computer, retaining the ability to
-                    run peripheral devices (e.g. printers) connected to the terminal computer. The
-                    application also has an ability to call out procedures connected and executed on
-                    a user's terminal and to run a file transmission between the application and a
-                    terminal.
+                <div class="products__container__flex">
+                    <img class="products__container__photo" src="./img/terminal.png"/>
+                    <div class="products__container__description">
+                        Terminal software allows to run Clipper or Harbour (xHarbour) application in a
+                        terminal mode. An application working on a server reacts to a user's keystrokes
+                        sent from a terminal run on a different PC computer, retaining the ability to
+                        run peripheral devices (e.g. printers) connected to the terminal computer. The
+                        application also has an ability to call out procedures connected and executed on
+                        a user's terminal and to run a file transmission between the application and a
+                        terminal.
+                    </div>
                 </div>
             </div>
             <button class="products__button">READ MORE</button>
@@ -247,43 +251,43 @@
         <div class="section-title">
             GET IN TOUCH
         </div>
-        <div class="contact__form">
+        <form class="contact__form">
             <div class="contact__form__text">
                 Got a question? We’d love to hear from you. Send us a
                 <br/>
                 message and we will repsond as soon as possible.
             </div>
 
-            <div class="contact__form__name">
+            <label class="contact__form__name">
                 Name
-            </div>
+            </label>
 
-            <input placeholder=""/>
+            <input type="text" name="name" required placeholder=""/>
 
-            <div class="contact__form__name">
+            <label class="contact__form__name">
                 E-mail address
-            </div>
+            </label>
 
-            <input placeholder=""/>
+            <input type="email" name="email" required placeholder=""/>
 
-            <div class="contact__form__name">
+            <label class="contact__form__name">
                 Topic
-            </div>
+            </label>
 
-            <input placeholder=""/>
+            <input type="text" name="topic" required placeholder=""/>
 
-            <div class="contact__form__name">
+            <label class="contact__form__name">
                 Message*
-            </div>
+            </label>
 
             <textarea placeholder="" class="contact__form__message" maxlength="400"></textarea>
 
             <div class="contact__form__disclaimer">*The maximum number of characters: 400</div>
 
-            <div class="contact__button">
+            <button type="submit" class="contact__button">
                 SUBMIT
-            </div>
-        </div>
+            </button>
+        </form>
     </section>
 
     <section class="news">
