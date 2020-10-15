@@ -1,22 +1,29 @@
 @import './variables';
 
 .footer {
-    background-color: #e5e5e5;
+    background-color: #1a1a1a;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding-bottom: 30px;
 
     &__container {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        margin: 0 15% 0 15%;
+    }
+
+    &__logo{
+        
     }
 
     &__links {
-        padding-top: 40px;
-        margin-left: 261px;
-        color: #7b7b7b;
+        width: 40%;
+        color: white;
         display: flex;
         list-style: none;
+        justify-content: space-around;
 
         a {
             display: block;
@@ -25,7 +32,6 @@
         }
 
         li {
-            padding-right: 30px;
             position: relative;
 
             &:nth-child(2):hover,
@@ -39,7 +45,7 @@
             display: block;
             position: absolute;
             top: 0;
-            left: calc(100% - 15px);
+            left: calc(100% + 15px);
             background-color: #7b7b7b;
             width: 1px;
             height: 23px;
@@ -47,35 +53,39 @@
     }
 
     &__social {
-        padding-top: 37px;
         display: flex;
-        width: 170px;
+        width: 10%;
         justify-content: space-between;
-        margin-left: auto;
-        margin-right: 261px;
 
         img {
             height: 30px;
             width: 30px;
         }
-
     }
 
     &__contact {
-        margin: 50px 261px 0 261px;
+        margin: 50px 15% 0 15%;
         display: flex;
         justify-content: space-between;
 
         &__text {
-            color: #3d3d3d;
+            color: white;
             font-size: 15px;
-            text-align: right;
+            text-align: left;
+            font-family: Montserrat;
+            font-weight: 300;
 
             span {
+                font-size: 17px;
                 display: block;
-                font-weight: bold;
-                margin-bottom: -15px;
+                font-weight: 600;
+                margin-bottom: -10px;
             }
         }
+    }
+
+    &__overlay{
+        background-color: $gradient;
+        padding-bottom: 30px;
     }
 }
