@@ -11,4 +11,5 @@ Made with basic stack of front-end technologies. Made for testing purposes (for 
 - HTML
 - CSS
 - Javascript
+- Glide.js
 
