@@ -28,6 +28,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 80px;
+
 
         &__row1 {
             flex-basis: 49%;
@@ -35,17 +37,11 @@
             flex-direction: column;
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
-            border-bottom: 10px solid transparent;
-
-
-            .first {
-                flex-basis: 50%;
-            }
+            border-bottom: 20px solid transparent;
         }
 
         &__photo {
             width: 100%;
-            flex-basis: 50%;
         }
 
         &__row2 {
@@ -55,27 +51,20 @@
             width: 500px;
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
+            border-bottom: 20px solid transparent;
 
             .second {
                 flex-basis: 49%;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
 
             }
 
             .third {
                 flex-basis: 49%;
-                margin-top: 5px;
+                margin-top: 10px;
 
             }
         }
-    }
-
-    &:after {
-        content: "";
-        background-color: #d0d0d0;
-        height: 1px;
-        width: 100%;
-        margin-top: 110px;
     }
 
     &__block {
