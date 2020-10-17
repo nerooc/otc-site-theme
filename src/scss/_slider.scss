@@ -31,7 +31,8 @@
     color: white;
 
     @include media("<=desktop"){
-        width: 50%;
+        width: 60%;
+        left: 22%;
     }
 
     @include media("<=tablet"){
@@ -66,10 +67,7 @@
             line-height: 30px;
         }
 
-        @include media("<=tablet"){
-            font-size: 13px;
-            line-height: 30px;
-        }
+       
     }
 
     &__button { 
