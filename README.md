@@ -9,7 +9,8 @@ Made with basic stack of front-end technologies. Made for testing purposes (for 
 ### Tech stack:
 
 - HTML
-- CSS
+- SASS (BEM)
+- RWD using [include-media](https://github.com/eduardoboucas/include-media) by [Eduardo Bouças](https://github.com/eduardoboucas)
 - Javascript
 - Glide.js
 
