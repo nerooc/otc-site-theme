@@ -42,6 +42,10 @@
     &--disabled {
       opacity: 0.33;
     }
+
+    @include media("<=tablet"){
+      display: none !important;
+    }
 }
 
 .glide__arrow img{

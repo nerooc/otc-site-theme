@@ -1,6 +1,7 @@
 @import './variables';
+@import './Lib/include-media';
 
-.header {
+.navbar {
     display: flex;
     margin-top: 32px;
     position: absolute;
@@ -17,11 +18,21 @@
         -webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
         -moz-box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
         box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+
+        @include media("<=tablet"){
+            height: 50px;
+        }
     }
 
     &__logo {
         margin: 0 14px 0 25px;
         cursor: pointer;
+
+        img {
+            @include media("<=tablet"){
+                width: 150px;
+            }
+        }
     }
 
     &__rect2 {
@@ -34,6 +45,10 @@
         -webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
         -moz-box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
         box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+
+        @include media("<=tablet"){
+            height: 50px;
+        }
     }
 
     &__links {
@@ -46,6 +61,20 @@
         justify-content: space-between;
         list-style: none;
         flex-wrap: wrap;
+
+        @include media("<=desktop"){
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        @include media("<=bg-tablet"){
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+
+        @include media("<=bg-tablet"){
+            display: none;
+        }
 
         &__link {
             font-size: 13px;
@@ -71,7 +100,7 @@
 
         &__dropdown {
             position: relative;
-            &:hover .header__links__dropdown__dropdown-content {
+            &:hover .navbar__links__dropdown__dropdown-content {
                 display: block;
             }
 
@@ -111,15 +140,6 @@
         }
 
         &__contact{
-            
-            /*
-            background-color: white;
-            color: black;
-            height: 45px;
-            border-radius: 10px;
-            */
-
-            /* make contact button unique */
         }
 
     }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="./css/style.css"/>
@@ -29,37 +30,37 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__rect1">
+    <navbar class="navbar">
+        <div class="navbar__rect1">
             <!-- the first rectangle-->
         </div>
         <a href="#">
-            <div class="header__logo">
+            <div class="navbar__logo">
                 <img src="./img/otclogo.svg" alt="logo"/>
             </div>
         </a>
         <!-- navbar-->
 
-        <nav class="header__rect2">
-            <div class="header__links">
-                <div class="header__links__link header__links__dropdown" href="#">
-                    <div class="header__links__dropdown__dropbtn">
+        <nav class="navbar__rect2">
+            <div class="navbar__links">
+                <div class="navbar__links__link navbar__links__dropdown" href="#">
+                    <div class="navbar__links__dropdown__dropbtn">
                         ABOUT US
                     </div>
 
-                    <div class="header__links__dropdown__dropdown-content">
+                    <div class="navbar__links__dropdown__dropdown-content">
                         <a href="#">News</a>
                         <a href="#">References</a>
                         <a href="#">Links</a>
                     </div>
                 </div>
 
-                <div class="header__links__link header__links__dropdown" href="#">
-                    <div class="header__links__dropdown__dropbtn">
+                <div class="navbar__links__link navbar__links__dropdown" href="#">
+                    <div class="navbar__links__dropdown__dropbtn">
                         PRODUCTS
                     </div>
 
-                    <div class="header__links__dropdown__dropdown-content">
+                    <div class="navbar__links__dropdown__dropdown-content">
                         <a href="#">Winflector</a>
                         <a href="#">Mediator</a>
                         <a href="#">Terminal</a>
@@ -68,29 +69,29 @@
                     </div>
                 </div>
 
-                <div class="header__links__link" href="#">
+                <div class="navbar__links__link" href="#">
                     PARTNERS
                 </div>
 
-                <div class="header__links__link header__links__dropdown" href="#">
-                    <div class="header__links__dropdown__dropbtn">
+                <div class="navbar__links__link navbar__links__dropdown" href="#">
+                    <div class="navbar__links__dropdown__dropbtn">
                         HELP
                     </div>
 
-                    <div class="header__links__dropdown__dropdown-content">
+                    <div class="navbar__links__dropdown__dropdown-content">
                         <a href="#">FAQ</a>
                         <a href="#">Report problems</a>
                         <a href="#">Product versions</a>
                     </div>
                 </div>
 
-                <div class="header__links__link header__links__contact" href="#">
+                <div class="navbar__links__link navbar__links__contact" href="#">
                     GET IN TOUCH
                 </div>
             </div>
         </nav>
 
-    </header>
+    </navbar>
 
     <img src="./img/back2top.svg" onclick="topFunction()" class="back-to-top"/>
 
@@ -100,12 +101,11 @@
 
                 <div
                     class="hero-slider__slide"
-                    style="background-image: url('/img/background1.png');">
+                    style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.1)), url('/img/background1.png');">
                     <div class="slider__container">
                         <div class="slider__container__title">MIGRATING TO SQL?</div>
                         <div class="slider__container__text">
-                            If you are going to migrate or rewrite your application to use SQL database you
-                            definitely need to read about our Mediator ISAM Server.
+                            If you are going to migrate or rewrite your application to use SQL database you definitely need to read about our Mediator ISAM Server.
                         </div>
                         <button class="slider__container__button">READ MORE</button>
                     </div>
@@ -113,12 +113,11 @@
 
                 <div
                     class="hero-slider__slide"
-                    style="background-image: url('/img/background2.png');">
+                    style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.1)), url('/img/background2.png');">
                     <div class="slider__container">
                         <div class="slider__container__title">HOW TO BECOME A PARTNER?</div>
                         <div class="slider__container__text">
-                            Every company producing Delphi or xBase software may become an OTC partner. For
-                            our partners we offer attractive purchase terms and technical support.
+                            Every company producing Delphi or xBase software may become an OTC partner. For our partners we offer attractive purchase terms and technical support.
                         </div>
                         <button class="slider__container__button">READ MORE</button>
                     </div>
@@ -126,12 +125,11 @@
 
                 <div
                     class="hero-slider__slide"
-                    style="background-image: url('/img/background3.png');">
+                    style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.1)), url('/img/background3.png');">
                     <div class="slider__container">
                         <div class="slider__container__title">THE PRICE CALCULATOR</div>
                         <div class="slider__container__text">
-                            Now you can find out prices of all our software on-line. We have placed the
-                            price calculator in "Products/Prices" section. The calculator is available for
+                            Now you can find out prices of all our software on-line. We have placed the price calculator in "Products/Prices" section. The calculator is available for
                             registered users only.
                         </div>
                         <button class="slider__container__button">READ MORE</button>
@@ -140,12 +138,11 @@
 
                 <div
                     class="hero-slider__slide"
-                    style="background-image: url('/img/background4.png');">
+                    style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.1)), url('/img/background4.png');">
                     <div class="slider__container">
                         <div class="slider__container__title">WHAT DO WE OFFER?</div>
                         <div class="slider__container__text">
-                            A transition to new and safe data-access technologies for everybody who creates
-                            and uses Borland Delphi or xBase applications.
+                            A transition to new and safe data-access technologies for everybody who creates and uses Borland Delphi or xBase applications.
                         </div>
                         <button class="slider__container__button">READ MORE</button>
                     </div>
@@ -254,7 +251,6 @@
         <form class="contact__form">
             <div class="contact__form__text">
                 Got a question? We’d love to hear from you. Send us a
-                <br/>
                 message and we will repsond as soon as possible.
             </div>
 

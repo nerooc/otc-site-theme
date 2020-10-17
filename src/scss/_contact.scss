@@ -1,5 +1,6 @@
 @import './variables';
 @import './Mixins/mixins';
+@import './Lib/include-media';
 
 .contact {
 	padding: 60px 0 60px 0;
@@ -14,6 +15,10 @@
 		font-family: 'Montserrat';
 		width: 500px;
 
+		@include media("<=bg-tablet"){
+            width: 60%;
+        }
+
 		&__text {
 			font-weight: 400;
 			font-size: 15px;
@@ -23,7 +28,7 @@
 
 		&__name {
 			margin-top: 20px;
-			font-weight: 400;
+			font-weight: 600;
 			font-size: 14px;
 		}
 

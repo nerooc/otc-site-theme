@@ -1,11 +1,12 @@
 @import './variables';
 @import './Mixins/mixins';
+@import './Lib/include-media';
 
 .about-us {
     padding: 60px 0 60px 0;
 
     &__text {
-        width: 43%;
+        width: 820px;
         margin: 30px auto;
         line-height: 30px;
         font-family: 'Montserrat', sans-serif;
@@ -13,6 +14,14 @@
         color: #7D7D7D;
         font-size: 15px;
         text-align: justify;
+
+        @include media("<=sm-desktop"){
+            width: 60%;
+        }
+
+        @include media("<=phone"){
+            width: 80%;
+        }
     }
 
     &__button {

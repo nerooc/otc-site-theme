@@ -1,6 +1,6 @@
 @import './variables';
 @import './Mixins/mixins';
-
+@import './Lib/include-media';
 
 .products {
     background-color: #e5e5e5;
@@ -12,8 +12,12 @@
         display: flex;
         justify-content: center;
         margin: 30px auto 0 auto;
-        width: 40%;
+        width: 750px;
         height: 40px;
+
+        @include media("<=bg-tablet"){
+            width: 70%;
+        }
 
         &__unit {
             color: #b1b1b1;
@@ -27,6 +31,10 @@
             width: calc(100% / 3);
             transition: 0.3s;
             cursor: pointer;
+
+            @include media("<=bg-tablet"){
+                font-size: 15px;
+            }
 
         }
 
@@ -43,13 +51,17 @@
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        width: 40%;
+        width: 750px;
         -webkit-box-shadow: 0px 0px 8px -2px rgba(0,0,0,1);
         -moz-box-shadow: 0px 0px 8px -2px rgba(0,0,0,1);
         box-shadow: 0px 0px 8px -2px rgba(0,0,0,1);
         background-color: white;
         margin: 30px auto 5px auto;
         padding: 30px;
+
+        @include media("<=bg-tablet"){
+            width: 70%;
+        }
 
         &__flex {
             display: flex;
@@ -78,6 +90,10 @@
             text-align: justify;
             margin: 20px;
             width: 65%;
+
+            @include media("<=bg-tablet"){
+                width: 80%;
+            }
         }
         
     }
