@@ -9,7 +9,7 @@ Made with basic stack of front-end technologies. Made for testing purposes (for 
 ### Tech stack:
 
 - HTML
-- CSS
+- SASS (BEM)
 - Javascript
 - Glide.js
 
