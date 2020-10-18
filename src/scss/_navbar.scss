@@ -18,8 +18,7 @@
         -webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
         -moz-box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
         box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
-
-        @include media("<=tablet"){
+        @include media("<=tablet") {
             height: 50px;
         }
     }
@@ -29,7 +28,7 @@
         cursor: pointer;
 
         img {
-            @include media("<=tablet"){
+            @include media("<=tablet") {
                 width: 150px;
             }
         }
@@ -45,8 +44,7 @@
         -webkit-box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
         -moz-box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
         box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
-
-        @include media("<=tablet"){
+        @include media("<=tablet") {
             height: 50px;
         }
     }
@@ -61,18 +59,15 @@
         justify-content: space-between;
         list-style: none;
         flex-wrap: wrap;
-
-        @include media("<=desktop"){
+        @include media("<=desktop") {
             margin-left: 5%;
             margin-right: 5%;
         }
-
-        @include media("<=bg-tablet"){
-            margin-left: 0%;
-            margin-right: 0%;
+        @include media("<=bg-tablet") {
+            margin-left: 0;
+            margin-right: 0;
         }
-
-        @include media("<=bg-tablet"){
+        @include media("<=bg-tablet") {
             display: none;
         }
 
@@ -119,7 +114,6 @@
                 background-color: white;
                 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
                 z-index: 1;
-
                 &:hover {
                     display: block;
                 }
@@ -133,15 +127,23 @@
                     /* to discuss */
                     text-align: left;
                 }
-                
                 a:hover {
                     background-color: #f1f1f1;
                 }
             }
         }
 
-        &__contact{
-        }
+        &__contact {}
 
     }
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 0 0 2px 5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
