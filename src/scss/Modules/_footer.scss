@@ -1,5 +1,5 @@
-@import './variables';
-@import './Lib/include-media';
+@import '../Base/variables';
+@import '../Lib/include-media';
 
 .footer {
     position: relative;
@@ -109,9 +109,17 @@
         &__text {
             color: white;
             font-size: 15px;
-            text-align: left;
+            text-align: center;
             font-family: Montserrat;
             font-weight: 300;
+
+            &:first-of-type{
+                text-align: left;
+            }
+
+            &:last-of-type{
+                text-align: right;
+            }
 
             span {
                 font-size: 17px;

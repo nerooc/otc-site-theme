@@ -1,5 +1,5 @@
-@import './variables';
-@import './Lib/include-media';
+@import '../Base/variables';
+@import '../Lib/include-media';
 
 .navbar {
     display: flex;
@@ -108,6 +108,7 @@
 
             &__dropdown-content {
                 width: 100%;
+                font-size: 15px;
                 position: absolute;
                 display: none;
                 top: 100%;
@@ -132,9 +133,6 @@
                 }
             }
         }
-
-        &__contact {}
-
     }
 }
 

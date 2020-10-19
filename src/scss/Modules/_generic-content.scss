@@ -1,0 +1,21 @@
+@import '../Lib/include-media';
+
+.generic-content {
+    li,
+    p {
+        font-size: 1.15rem;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 210%;        
+        text-align: justify;
+        white-space: pre-line;
+    }
+
+    blockquote,
+    blockquote p {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+}

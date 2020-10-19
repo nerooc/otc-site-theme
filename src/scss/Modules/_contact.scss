@@ -1,6 +1,6 @@
-@import './variables';
-@import './Mixins/mixins';
-@import './Lib/include-media';
+@import '../Base/variables';
+@import '../Mixins/mixins';
+@import '../Lib/include-media';
 
 .contact {
 	padding: 60px 0 60px 0;

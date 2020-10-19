@@ -1,0 +1,71 @@
+@import '../Base/variables';
+@import '../Lib/include-media';
+
+.page-links {
+    position: relative;
+    z-index: 1;
+    background-color: $lightgray;
+    margin: 0 0 20px 40px;
+    width: 300px;
+    font-family: Montserrat;
+    float: right;
+    
+    @include media("<=tablet"){
+        width: auto;
+        margin: 0 0 40px 0;
+        float: none;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: normal;
+        text-align: center;
+        padding: 20px 0;
+        font-weight: 600;
+        background-color: $base-color;
+        color: #FFF;
+
+        a {
+            color: #FFF;
+            text-decoration: none;
+            background-color: $base-color;
+        }
+    }
+
+    li {
+        border-top: 1px solid color($lightgray l(-14%));
+    }
+
+    li:first-child {
+        border-top: none;
+    }
+
+    & .current_page_item{
+        text-align: center;
+        background-color: #cecece;
+        color: $base-color;
+        font-weight: bold;
+    }
+
+    li a {
+        display: block;
+        text-align: center;
+        padding: 17px 10px;
+        text-decoration: none;
+        color: $base-color;
+        transition: all 0.3s;
+    }
+    li a:hover {
+        color: color($base-color b(+6%));
+        background-color: color($lightgray blackness(+18%) s(+65%));
+    }
+}
+
+.min-list {
+    padding: 0;
+    margin: 0;
+}
+
+.min-list li {
+    list-style: none;
+}
