@@ -31,7 +31,7 @@
         margin-bottom: 80px;
 
 
-        &__row1 {
+        &__featured-post {
             flex-basis: 49%;
             display: flex;
             flex-direction: column;
@@ -56,7 +56,6 @@
             .second {
                 flex-basis: 49%;
                 margin-bottom: 10px;
-
             }
 
             .third {
@@ -68,6 +67,7 @@
     }
 
     &__block {
+        position: relative;
         background-color: white;
         padding: 18px 50px;
         display: flex;
@@ -75,30 +75,37 @@
         transition: 0.2s;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         min-width: 400px;
-
+        overflow: hidden;
         //  cursor: pointer;
+
+        &:hover > span{
+	        animation: slide-out-top-in 0.2s linear forwards;
+        }
         span {
-            font-size: 9px;
+            font-size: 13px;
             color: #D0D0D0;
             font-weight: bold;
+            animation: slide-out-top-out 0.2s linear forwards;
         }
 
         &__title {
             font-size: 28px;
             color: #3d3d3d;
             padding-top: 10px;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         &__desc {
             font-size: 15px;
             padding-top: 15px;
-            padding-bottom: 55px;
+            line-height: 25px;
             color: #3d3d3d;
             opacity: 0.67;
         }
 
         &__button {
+            position: absolute;
+            bottom: -5px;
             font-size: 12px;
             color: #AB0039;
             font-weight: bold;
@@ -116,3 +123,32 @@
     background-color: lightgray;
 }
 */
+
+
+@keyframes slide-out-top-in{
+    0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(-20px);
+                transform: translateY(-20px);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-out-top-out{
+    0% {
+        -webkit-transform: translateY(-20px);
+                transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
+}

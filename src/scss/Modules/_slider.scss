@@ -97,6 +97,10 @@
         top: 50px;
     }
 
+    @include media("<=desktop") {
+        left: 46.5% !important;
+    }
+
     button {
         display: inline-block;
         text-indent: -9999px;

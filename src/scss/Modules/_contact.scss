@@ -3,27 +3,104 @@
 @import '../Lib/include-media';
 
 .contact {
-	padding: 60px 0 60px 0;
+	background-color: $base-color;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 50px 15%;
+
+	&__stats {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+		height: 100%;
+
+		.section-title{
+			color: white;
+		}
+
+		&__numbers{
+			display: flex;
+			margin: 30px 0;
+			width: 500px;
+			border: 1px solid white;
+			border-radius: 30px;
+			height: 150px;
+
+			.stat-item{
+				flex-basis: 35%;
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+				font-family: Montserrat;
+				font-weight: 600;
+				color: white;
+				border-right: 1px solid white;
+
+				.stat-num{
+					font-size: 70px;
+				}
+
+				.stat-desc{
+					font-size: 15px;
+					text-align: center;
+				}
+			}
+
+			.stat-item-wide{
+				flex-basis: 65%;
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+				font-family: Montserrat;
+				font-weight: 600;
+				color: white;
+
+				.stat-num{
+					font-size: 70px;
+				}
+
+				.stat-desc{
+					font-size: 15px;
+					text-align: center;
+				}
+			}
+
+		}
+
+		&__companies{
+			margin-top: 70px;
+			.companies__title{
+				color: white;
+				font-family: Montserrat;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 20px;
+				text-align: center;
+			}
+		}
+
+	}
 
 	&__form {
+		background-color: white;
 		display: flex;
 		flex-direction: column;
 		font-family: 'Montserrat';
 		width: 500px;
+		padding: 40px;
+		border-radius: 30px;
 
-		@include media("<=bg-tablet"){
-            width: 60%;
+		@include media("<=tablet"){
+            width: 80%;
         }
 
 		&__text {
 			font-weight: 400;
 			font-size: 15px;
 			text-align: center;
-			margin: 40px auto 13px;
 		}
 
 		&__name {
@@ -37,12 +114,11 @@
 			width: 100%;
 			font-size: 13px;
 			font-weight: 400;
-			height: 40px;
+			height: 35px;
 			border: 1px solid rgba(0, 0, 0, 0.4);
 			box-sizing: border-box;
-			border-radius: 10px;
-			padding-left: 20px;
-			padding-right: 20px;
+			padding-left: 10px;
+			padding-right: 10px;
 			font-family: 'Montserrat';
 			color: black;
 
@@ -60,11 +136,10 @@
 			margin-top: 5px;
 			width: 100%;
 			font-size: 13px;
-			height: 200px;
+			height: 100px;
 			border: 1px solid rgba(0, 0, 0, 0.4);
 			box-sizing: border-box;
-			border-radius: 10px;
-			padding: 10px 20px 10px 20px;
+			padding: 10px 10px 10px 10px;
 			line-height: 20px;
 			resize: vertical;
 			font-family: 'Montserrat';

@@ -19,7 +19,8 @@
             width: 60%;
         }
 
-        @include media("<=phone"){
+        @include media("<=tablet"){
+            margin-top: 50px;
             width: 80%;
         }
     }
@@ -28,5 +29,9 @@
         @include button;
         margin: auto;
         margin-top: 40px;
+
+        @include media("<=tablet"){
+            margin-top: 50px;
+        }
     }
 }
