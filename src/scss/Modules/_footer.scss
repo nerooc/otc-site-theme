@@ -63,7 +63,7 @@
             position: relative;
             &:nth-child(2):hover,
             &:nth-child(3):hover {
-                color: #3d3d3d;
+                color: $base-color;
             }
 
             @include media("<=sm-desktop"){
@@ -88,15 +88,16 @@
         width: 150px;
         justify-content: space-between;
 
+
         @include media(">bg-tablet", "<=sm-desktop"){
             width: 120px;
         }
 
         img {
-            width: 30px;
+            width: 25px;
 
             @include media(">bg-tablet", "<=sm-desktop"){
-                width: 25px;
+                width: 20px;
             }
         }
     }
