@@ -43,10 +43,15 @@
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
             border-bottom: 20px solid transparent;
+            
+            .first{
+                flex-basis: 50%;
+            }
         }
 
+        
         &__photo {
-            height: 60%;
+            flex-basis: 55%;
             object-fit: cover;
         }
 
