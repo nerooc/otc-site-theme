@@ -17,6 +17,7 @@ class Slider {
       var glide = new Glide(".hero-slider", {
         type: "carousel",
         perView: 1,
+        gap: 0,
         autoplay: 7000,
         animationDuration: 1000,
         animationTimingFunc: "ease-out"
