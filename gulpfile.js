@@ -1,3 +1,4 @@
+  
 const gulp = require('gulp');
 const browserSync = require('browser-sync');
 const sass = require('gulp-sass');
@@ -8,12 +9,24 @@ const htmlmin = require('gulp-htmlmin');
 const runSequence = require('run-sequence');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
+const merge = require('merge-stream');
 
 const config = {
   src: 'src/',
-  scssin: 'src/scss/**/*.scss',
-  scssout: 'src/css/',
+  dist: 'dist/',
+  cssin: './src/css/style.css',
+  cssout: './dist/css',
   sassin: 'src/scss/**/*.sass',
+  sassout: 'src/css/',
+  jsin: './src/js/**/*.js',
+  jsout: './dist/js',
+  htmlin: './src/**/*.html',
+  htmlout: './dist',
+  imgin: [
+    './src/img/*', 
+    './src/img/*/*'
+  ],
+  imgout: './dist/img/'
 };
 
 gulp.task('reload', function() {
@@ -22,46 +35,37 @@ gulp.task('reload', function() {
 
 // Gulp task to minify CSS files
 gulp.task('styles', function () {
-  return gulp.src('./src/css/index.css')
+  return gulp.src(config.cssin)
     .pipe(csso())
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest(config.cssout))
 });
 
 // Gulp task to minify JavaScript files
 gulp.task('scripts', function() {
-  return gulp.src('./src/js/**/*.js')
+  return gulp.src(config.jsin)
     .pipe(uglify())
-    .pipe(gulp.dest('./dist/js'))
+    .pipe(gulp.dest(config.jsout))
 });
 
 // Gulp task to minify HTML files
 gulp.task('pages', function() {
-  return gulp.src(['./src/**/*.html'])
+  return gulp.src([config.htmlin])
     .pipe(htmlmin({
       collapseWhitespace: true,
       removeComments: true
     }))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest(config.htmlout));
 });
 
 // Gulp task to minify images
-
-gulp.task('img', function(){
-  return gulp.src('./src/img/*')
-  .pipe(imagemin())
-  .pipe(gulp.dest('./dist/img'));
-})
-
-gulp.task('scss', function(){
-  return gulp.src(config.scssin)
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsersList: ['last 3 versions']
-    }))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(config.scssout))
-    .pipe(browserSync.stream());
+gulp.task('img', function() {
+  let images = config.imgin.map((dir) => {
+    return gulp.src(dir)
+    .pipe(imagemin())
+    .pipe(gulp.dest(config.imgout));
+  });
+  
+  return merge(images);
 });
 
 gulp.task('sass', function(){
@@ -72,17 +76,24 @@ gulp.task('sass', function(){
       browsersList: ['last 3 versions']
     }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(config.scssout))
+    .pipe(gulp.dest(config.sassout))
     .pipe(browserSync.stream());
 });
 
-gulp.task('serve', gulp.series('sass', 'scss', function() {
+gulp.task('serve', gulp.series('sass', function() {
   browserSync({
     server: config.src
   });
 
-  gulp.watch(config.scssin, gulp.series('scss'));
   gulp.watch(config.sassin, gulp.series('sass'))
 }));
+
+gulp.task('build', gulp.series('styles', 'scripts', 'pages', 'img'))
+
+gulp.task('beta', function() {
+  browserSync({
+    server: config.dist
+  })
+})
 
 gulp.task('default', gulp.series('serve'));

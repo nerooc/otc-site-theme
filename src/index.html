@@ -105,27 +105,60 @@
     <navbar class="ham-navbar">
         <div class="ham-navbar__bar">
             <img src="./img/otclogo.svg" alt="logo"/>
-            <i class="fas fa-times" id="ham-exit"></i>
+            <img src="img/close-icon.svg" class="ham-exit"></img>
         </div>
         <ul class="ham-navbar__links">
-            <a href="#">
+            <div class="ham-navbar__links__link">
                 <li>ABOUT US
                     <i class="arrow-right"></i>
                 </li>
-            </a>
-            <a href="#">
+                <ul class="ham-dropdown hidden">
+                    <a href="./page.html">
+                        News
+                    </a>
+                    <a href="#">
+                        References
+                    </a>
+                    <a href="./page.html">
+                        Links
+                    </a>
+                </ul>
+            </div>
+            <div class="ham-navbar__links__link">
                 <li>PRODUCTS
                     <i class="arrow-right"></i>
                 </li>
-            </a>
-            <a href="#">
+                <ul class="ham-dropdown hidden">
+                    <a href="#">
+                        News
+                    </a>
+                    <a href="#">
+                        News
+                    </a>
+                    <a href="#">
+                        News
+                    </a>
+                </ul>
+            </div>
+            <a class="ham-navbar__links__link" href="#">
                 <li>PARTNERS</li>
             </a>
-            <a href="#">
+            <div class="ham-navbar__links__link">
                 <li>HELP
                     <i class="arrow-right"></i>
                 </li>
-            </a>
+                <ul class="ham-dropdown hidden">
+                    <a href="#">
+                        News
+                    </a>
+                    <a href="#">
+                        News
+                    </a>
+                    <a href="#">
+                        News
+                    </a>
+                </ul>
+            </div>
 
             <div class="ham-navbar__links__cta">
                 <button>GET IN TOUCH</button>
