@@ -1,3 +1,10 @@
+class Products{
+    constructor(){
+        
+    }
+
+}
+
 var option1 = document.getElementById("op1");
 var option2 = document.getElementById("op2");
 var option3 = document.getElementById("op3");

@@ -1,8 +1,8 @@
 class Hamburger {
     constructor(){
-        this.hamburgerBtn = document.querySelector(".hamburger");
-        this.hamburgerNavbar = document.querySelector(".ham-navbar");
-        this.hamburgerExit = document.querySelector(".ham-exit");
+        this.hamburgerBtn = document.getElementById("ham");
+        this.hamburgerNavbar = document.getElementById("ham-nav");
+        this.hamburgerExit = document.getElementById("ham-x");
         this.page = document.querySelector("html");
         this.links = Array.from(document.querySelectorAll(".ham-navbar__links__link"));
         this.arrows = Array.from(document.querySelectorAll(".arrow-right"));
@@ -26,18 +26,20 @@ class Hamburger {
         this.page.style.overflowY = "scroll";
     }
 
+    linkHandle = (element) => {
+        element.children[0].firstElementChild.classList.toggle("arrow-right");     
+        element.children[0].firstElementChild.classList.toggle("arrow-left");
+        element.children[1].classList.toggle("hidden");
+    }
+
     openDropdown = (e) => {
 
         this.links.forEach((link) => {
             if(link == e.target.parentElement){
-                link.children[0].firstElementChild.classList.toggle("arrow-right");     
-                link.children[0].firstElementChild.classList.toggle("arrow-left");
-                link.children[1].classList.toggle("hidden");
-            } else if(link == e.target.parentElement.parentElement.parentElement){
+                this.linkHandle(link);
+            } else if(link == e.target.parentElement.parentElement){
                 this.hamburgerNavbar.classList.remove('ham-active');
-                link.children[0].firstElementChild.classList.toggle("arrow-right");     
-                link.children[0].firstElementChild.classList.toggle("arrow-left");
-                link.children[1].classList.toggle("hidden");
+                this.linkHandle(link);
             } else {
                link.classList.toggle("hidden");
             }
