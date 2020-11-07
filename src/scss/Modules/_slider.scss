@@ -2,6 +2,11 @@
 @import '../Base/variables';
 @import '../Lib/include-media';
 
+@function vh($quantity) {
+    @return calc(var(--vh, 1vh) * #{$quantity});
+    }
+    
+
 .hero-slider {
     position: relative;
 
@@ -10,10 +15,10 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        @include media("<=tablet") {
-            height: 100vh;
-        }
 
+        @include media("<=tablet") {
+            height: vh(100);
+        }
     }
 
     #slide1 {

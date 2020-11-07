@@ -13,6 +13,7 @@ let topper = new Topper();
 products.init();
 hamburger.init();
 topper.init();
+document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);
 
 
 window.onscroll = function () {
