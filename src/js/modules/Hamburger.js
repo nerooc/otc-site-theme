@@ -8,7 +8,7 @@ class Hamburger {
         this.arrows = Array.from(document.querySelectorAll(".arrow-right"));
     }
 
-    addListeners = () => {
+    init = () => {
         this.hamburgerBtn.addEventListener('click', this.openHamburger);
         this.hamburgerExit.addEventListener('click', this.closeHamburger);
         this.links.forEach(link => {
@@ -45,10 +45,6 @@ class Hamburger {
             }
         })
 
-    }
-
-    init(){
-        this.addListeners();
     }
 }
 

@@ -7,16 +7,14 @@
 @import "./scss/Modules/contact";
 @import "./scss/Modules/news";
 @import "./scss/Modules/footer";
-@import "./scss/Modules/back-to-top";
-//@import "./Modules/page";
+@import "./scss/Modules/topper";
 @import "./scss/Modules/page-banner";
 @import "./scss/Modules/page-links";
 @import "./scss/Base/container";
 @import "./scss/Modules/page-section";
 @import "./scss/Modules/generic-content";
 @import "./scss/Modules/hamburger-menu";
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+//@import "./Modules/page";
 
 /* glide.js */
 @import "./scss/lib/glide.theme.min.css";

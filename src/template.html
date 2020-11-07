@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- stylesheet -->
-    <!-- link rel="stylesheet" href="./style.scss"/ -->
-
     <!-- fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
@@ -15,13 +12,13 @@
     <link
         href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
         rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
 
     <!-- scripts -->
     <script src="https://kit.fontawesome.com/d639997e10.js" crossorigin="anonymous"></script>
-    <script src="https://skrypt-cookies.pl/id/ee83d620f1f50089.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-        src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
 
     <!-- favicon -->
     <link rel="icon" href="./img/favicon.svg"/>
@@ -169,7 +166,9 @@
     </navbar>
 
     <!-- floating back to top button -->
-    <img src="./img/back2top.svg" onclick="topFunction()" class="back-to-top"/>
+    <div class="back-to-top" id="topper">
+        <i class="fas fa-chevron-up"></i>
+    </div>
 
     <!-- hero slider -->
     <header class="hero-slider">
@@ -413,7 +412,7 @@
     LATEST NEWS AND INSIGHTS
 </div>
 
-<div class="news__posts">
+<div class="news__more">
     <a href="#">
         ALL POSTS >
     </a>

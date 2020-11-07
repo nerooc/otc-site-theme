@@ -3,7 +3,7 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        main: "./src/js/scripts.js",
+        main: "./src/js/scripts.js"
     },
     module: {
         rules: [
@@ -17,6 +17,19 @@ module.exports = {
                     options: {
                         name: "[name].[contentHash].[ext]",
                         outputPath: "assets"
+                    }
+                }
+            }, {
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            '@babel/preset-env', {
+                                'plugins': ['@babel/plugin-proposal-class-properties']
+                            }
+                        ]
                     }
                 }
             }

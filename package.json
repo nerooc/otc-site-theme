@@ -4,7 +4,7 @@
   "description": "Basic setup:\r 1) npm install\r 2) gulp serve",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dec.js --open",
+    "start": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
   "author": "",
@@ -36,7 +36,7 @@
     "sass-loader": "^10.0.5",
     "style-loader": "^2.0.0",
     "webpack": "^5.4.0",
-    "webpack-cli": "^4.1.0",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.3.0"
   },

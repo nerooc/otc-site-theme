@@ -1,0 +1,35 @@
+.back-to-top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	width: 42px;
+	height: 42px;
+	transition: 0.2s;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	cursor: pointer;
+
+	i{
+		color: white;
+		font-size: 23px;
+	}
+
+	&:after{
+		content: "";
+		position: absolute;
+		width: 42px;
+		height: 42px;
+		background-color: black;
+		opacity: 0.5;
+		z-index: -1;
+		border-radius: 3px;	
+		transition: 0.2s;
+	}
+
+	&:hover:after{
+		opacity: 0.7;
+	}
+}
