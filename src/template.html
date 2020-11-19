@@ -256,12 +256,12 @@
         </h3>
 
         <ul class="products__options">
-            <li class="products__options__unit active" id="op1">MEDIATOR</li>
-            <li class="products__options__unit" id="op2">TERMINAL</li>
-            <li class="products__options__unit" id="op3">WINFLECTOR</li>
+            <li class="products__options__unit products__options__unit--active" data-tab="1">MEDIATOR</li>
+            <li class="products__options__unit" data-tab="2">TERMINAL</li>
+            <li class="products__options__unit" data-tab="3">WINFLECTOR</li>
         </ul>
 
-        <div class="products__container" id="containerMediator">
+        <div class="products__container products__container--active" id="container--1">
             <div class="products__container__info">
                 <div class="products__container__flex">
                     <img class="products__container__photo" src="./img/mediator.png"/>
@@ -279,7 +279,7 @@
             <button class="products__button">READ MORE</button>
         </div>
 
-        <div class="products__container" style="display: none;" id="containerTerminal">
+        <div class="products__container" id="container--2">
             <div class="products__container__info">
                 <div class="products__container__flex">
                     <img class="products__container__photo" src="./img/terminal.png"/>
@@ -297,10 +297,7 @@
             <button class="products__button">READ MORE</button>
         </div>
 
-        <div
-            class="products__container"
-            style="display: none;"
-            id="containerWinflector">
+        <div class="products__container" id="container--3">
             <div class="products__container__info">
                 <div class="products__container__flex">
                     <img class="products__container__photo" src="./img/winf.png"/>

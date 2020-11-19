@@ -3,19 +3,21 @@
 @import '../Lib/include-media';
 
 @function vh($quantity) {
-    @return calc(var(--vh, 1vh) * #{$quantity});
-    }
-    
+     @return calc(var(--vh, 1vh) * #{$quantity});
+}
 
 .hero-slider {
     position: relative;
+
+    &:hover{
+        cursor: auto;
+    }
 
     &__slide {
         height: 650px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
         @include media("<=tablet") {
             height: vh(100);
         }
@@ -27,17 +29,14 @@
 
     #slide2 {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.1)), url("./img/background2.png");
-
     }
 
     #slide3 {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.1)), url("./img/background3.png");
-
     }
 
     #slide4 {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.1)), url("./img/background4.png");
-
     }
 }
 
