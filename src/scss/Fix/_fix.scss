@@ -1,0 +1,53 @@
+.glide__slide {
+    /* Fix for flashing background image on slide */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.glide__slides { backface-visibility: visible; }
+
+.glide__arrow{
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 20px;
+    
+    padding: 50px 12px;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 150ms ease, border 300ms ease-in-out;
+    line-height: 1;
+
+    transition: 0.3s;
+
+    &:focus { outline: none; }
+    &:hover { background: rgba(0, 0, 0, 0.8); }
+
+    &--left {
+      left: 30px;
+    }
+
+    &--right {
+      right: 30px;
+    }
+
+    &--disabled {
+      opacity: 0.33;
+    }
+
+    @include media("<=tablet"){
+      display: none !important;
+    }
+}
+
+.glide__arrow img{
+    width: 25px;
+}

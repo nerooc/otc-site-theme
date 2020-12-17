@@ -1,0 +1,37 @@
+@import "./scss/Modules/slider";
+@import "./scss/Modules/navbar";
+@import "./scss/Base/variables";
+@import "./scss/Base/base";
+@import "./scss/Modules/aboutus";
+@import "./scss/Modules/products";
+@import "./scss/Modules/contact";
+@import "./scss/Modules/news";
+@import "./scss/Modules/footer";
+@import "./scss/Modules/topper";
+@import "./scss/Modules/page-banner";
+@import "./scss/Modules/page-links";
+@import "./scss/Base/container";
+@import "./scss/Modules/page-section";
+@import "./scss/Modules/generic-content";
+@import "./scss/Modules/hamburger-menu";
+//@import "./Modules/page";
+
+/* glide.js */
+@import "./scss/lib/glide.theme.min.css";
+@import "./scss/lib/glide.core.min.css";
+
+/* fixes */
+@import './scss/Fix/fix';
+
+html {
+    color: #2a2a2a;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}

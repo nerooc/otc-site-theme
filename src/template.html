@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
+        rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+        rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- scripts -->
+    <script src="https://kit.fontawesome.com/d639997e10.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon.svg"/>
+
+    <!-- site title -->
+    <title>OTC</title>
+</head>
+
+<body>
+
+    <!-- navbar-->
+    <navbar class="navbar">
+        <!-- the first rectangle-->
+        <div class="navbar__rect1"></div>
+        <!-- logo-->
+        <a href="#">
+            <div class="navbar__logo">
+                <img src="./img/otclogo.svg" alt="logo"/>
+            </div>
+        </a>
+
+        <!-- navbar links -->
+        <nav class="navbar__rect2">
+            <div class="navbar__links">
+                <div class="navbar__links__link navbar__links__dropdown" href="#">
+                    <div class="navbar__links__dropdown__dropbtn">
+                        ABOUT US
+                        <i class="arrow-down"></i>
+                    </div>
+
+                    <div class="navbar__links__dropdown__dropdown-content">
+                        <a href="./page.html">News</a>
+                        <a href="#">References</a>
+                        <a href="#">Links</a>
+                    </div>
+                </div>
+
+                <div class="navbar__links__link navbar__links__dropdown" href="#">
+                    <div class="navbar__links__dropdown__dropbtn">
+                        PRODUCTS
+                        <i class="arrow-down"></i>
+                    </div>
+
+                    <div class="navbar__links__dropdown__dropdown-content">
+                        <a href="#">Winflector</a>
+                        <a href="#">Mediator</a>
+                        <a href="#">Terminal</a>
+                        <a href="#">How to buy?</a>
+                        <a href="#">Prices</a>
+                    </div>
+                </div>
+
+                <div class="navbar__links__link" href="#">
+                    PARTNERS
+                </div>
+
+                <div class="navbar__links__link navbar__links__dropdown" href="#">
+                    <div class="navbar__links__dropdown__dropbtn">
+                        HELP
+                        <i class="arrow-down"></i>
+                    </div>
+
+                    <div class="navbar__links__dropdown__dropdown-content">
+                        <a href="#">FAQ</a>
+                        <a href="#">Report problems</a>
+                        <a href="#">Product versions</a>
+                    </div>
+                </div>
+
+                <button class="navbar__links__link navbar__links__contact" href="#">
+                    GET IN TOUCH
+                </button>
+
+            </div>
+            <img src="./img/hamburger.svg" class="hamburger" id="ham" alt="test"/>
+
+        </nav>
+
+    </navbar>
+
+    <!-- hamburger navbar -->
+    <navbar class="ham-navbar" id="ham-nav">
+        <div class="ham-navbar__bar">
+            <img src="./img/otclogo.svg" alt="logo"/>
+            <img src="img/close-icon.svg" class="ham-exit" id="ham-x"></img>
+        </div>
+        <ul class="ham-navbar__links">
+            <div class="ham-navbar__links__link">
+                <li>ABOUT US
+                    <i class="arrow-right"></i>
+                </li>
+                <ul class="ham-dropdown hidden">
+                    <a href="./page.html">
+                        News
+                    </a>
+                    <a href="#">
+                        References
+                    </a>
+                    <a href="./page.html">
+                        Links
+                    </a>
+                </ul>
+            </div>
+            <div class="ham-navbar__links__link">
+                <li>PRODUCTS
+                    <i class="arrow-right"></i>
+                </li>
+                <ul class="ham-dropdown hidden">
+                    <a href="#">
+                        News
+                    </a>
+                    <a href="#">
+                        News
+                    </a>
+                    <a href="#">
+                        News
+                    </a>
+                </ul>
+            </div>
+            <a class="ham-navbar__links__link" href="#">
+                <li>PARTNERS</li>
+            </a>
+            <div class="ham-navbar__links__link">
+                <li>HELP
+                    <i class="arrow-right"></i>
+                </li>
+                <ul class="ham-dropdown hidden">
+                    <a href="#">
+                        News
+                    </a>
+                    <a href="#">
+                        News
+                    </a>
+                    <a href="#">
+                        News
+                    </a>
+                </ul>
+            </div>
+
+            <div class="ham-navbar__links__cta">
+                <button>GET IN TOUCH</button>
+            </div>
+
+        </ul>
+
+    </navbar>
+
+    <!-- floating back to top button -->
+    <div class="back-to-top" id="topper">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- hero slider -->
+    <header class="hero-slider">
+        <div data-glide-el="track" class="glide__track">
+            <div class="glide__slides">
+
+                <div class="hero-slider__slide" id="slide1">
+                    <div class="slider__container">
+                        <div class="slider__container__title">MIGRATING TO SQL?</div>
+                        <div class="slider__container__text">
+                            If you are going to migrate or rewrite your application to use SQL database you
+                            definitely need to read about our Mediator ISAM Server.
+                        </div>
+                        <button class="slider__container__button">READ MORE</button>
+                    </div>
+                </div>
+
+                <div class="hero-slider__slide" id="slide2">
+                    <div class="slider__container">
+                        <div class="slider__container__title">HOW TO BECOME A PARTNER?</div>
+                        <div class="slider__container__text">
+                            Every company producing Delphi or xBase software may become an OTC partner. For
+                            our partners we offer attractive purchase terms and technical support.
+                        </div>
+                        <button class="slider__container__button">READ MORE</button>
+                    </div>
+                </div>
+
+                <div class="hero-slider__slide" id="slide3">
+                    <div class="slider__container">
+                        <div class="slider__container__title">THE PRICE CALCULATOR</div>
+                        <div class="slider__container__text">
+                            Now you can find out prices of all our software on-line. We have placed the
+                            price calculator in "Products/Prices" section. The calculator is available for
+                            registered users only.
+                        </div>
+                        <button class="slider__container__button">READ MORE</button>
+                    </div>
+                </div>
+
+                <div class="hero-slider__slide" id="slide4">
+                    <div class="slider__container">
+                        <div class="slider__container__title">WHAT DO WE OFFER?</div>
+                        <div class="slider__container__text">
+                            A transition to new and safe data-access technologies for everybody who creates
+                            and uses Borland Delphi or xBase applications.
+                        </div>
+                        <button class="slider__container__button">READ MORE</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="./img/left-arrow-line-symbol.svg"></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="./img/right-arrow-angle.svg"></button>
+            </div>
+            <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]"></div>
+        </div>
+    </header>
+
+    <!-- about us section -->
+    <section class="about-us">
+        <h3 class="section-title">
+            WHO WE ARE
+        </h3>
+        <article class="about-us__text">
+            OTC S.A. company was founded in 1995 by employees of IT and Telecommunication
+            Department of the University of Science and Technology in Cracow. From the
+            beginning of its activities, it has been specializing in creating software tools
+            for relational databases and xBase compilers. The main area of its activity is
+            providing solutions which would enable migration to new, safe and effective
+            technologies for everyone who develops and uses applications written in Borland
+            Delphi, CA-Clipper, Harbour or xHarbour.
+        </article>
+
+        <button class="about-us__button">
+            TALK TO OUR TEAM
+        </button>
+    </section>
+
+    <!-- products section -->
+    <section class="products">
+        <h3 class="section-title">
+            WHAT WE OFFER
+        </h3>
+
+        <ul class="products__options">
+            <li class="products__options__unit products__options__unit--active" data-tab="1">MEDIATOR</li>
+            <li class="products__options__unit" data-tab="2">TERMINAL</li>
+            <li class="products__options__unit" data-tab="3">WINFLECTOR</li>
+        </ul>
+
+        <div class="products__container products__container--active" id="container--1">
+            <div class="products__container__info">
+                <div class="products__container__flex">
+                    <img class="products__container__photo" src="./img/mediator.png"/>
+                    <div class="products__container__description">
+                        Would you like your application written in Delphi, Clipper, Harbour, or xHarbour
+                        start to work with the SQL database in an almost magical way? What is more, do
+                        you want it to happen in no time and without any effort from your side? If the
+                        answer is yes, you have found the right solution - Mediator ISAM server.
+                        Mediator has been created in order to provide a fast and unproblematic migration
+                        from the obsolete data technologies such as DBF to SQL which is becoming a
+                        standard.
+                    </div>
+                </div>
+            </div>
+            <button class="products__button">READ MORE</button>
+        </div>
+
+        <div class="products__container" id="container--2">
+            <div class="products__container__info">
+                <div class="products__container__flex">
+                    <img class="products__container__photo" src="./img/terminal.png"/>
+                    <div class="products__container__description">
+                        Terminal software allows to run Clipper or Harbour (xHarbour) application in a
+                        terminal mode. An application working on a server reacts to a user's keystrokes
+                        sent from a terminal run on a different PC computer, retaining the ability to
+                        run peripheral devices (e.g. printers) connected to the terminal computer. The
+                        application also has an ability to call out procedures connected and executed on
+                        a user's terminal and to run a file transmission between the application and a
+                        terminal.
+                    </div>
+                </div>
+            </div>
+            <button class="products__button">READ MORE</button>
+        </div>
+
+        <div class="products__container" id="container--3">
+            <div class="products__container__info">
+                <div class="products__container__flex">
+                    <img class="products__container__photo" src="./img/winf.png"/>
+                    <div class="products__container__description">
+                        We offer one of the best virtualization software available on the market –
+                        Winflector. It allows easy, fast and effective applications sharing over a
+                        network, without excessive consumption of computing and network resources. If
+                        you are looking for an alternative for Remote Desktop Services (Windows Terminal
+                        Services), Citrix XenApp, VNC etc. – Winflector, one of the best low-cost and
+                        efficient virtualization software, is for you.
+                    </div>
+                </div>
+            </div>
+            <button class="products__button">READ MORE</button>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact">
+        <div class="contact__stats">
+            <h3 class="section-title">
+                GET IN TOUCH
+            </h3>
+            <div class="contact__stats__numbers">
+                <div class="stat-item">
+                    <div class="stat-num">
+                        25
+                    </div>
+
+                    <div class="stat-desc">
+                        YEARS IN
+                    </br>
+                    OPERATION
+                </div>
+            </div>
+
+            <div class="stat-item-wide">
+                <div class="stat-num">
+                    13328
+                </div>
+
+                <div class="stat-desc">
+                    LICENSE KEYS
+                </br>
+                SOLD WORLDWIDE
+            </div>
+        </div>
+    </div>
+
+    <div class="contact__stats__companies">
+        <h5 class="companies__title">
+            COMPANIES THAT CHOSE US
+        </h5>
+
+        <div class="companies__logos">
+            <img src="./img/ibm.svg" alt="ibm" class="logo"/>
+            <img src="./img/microsoft.svg" alt="microsoft" class="logo"/>
+            <img src="./img/sybase.svg" alt="sybase" class="logo"/>
+        </div>
+        <!-- photos or slider containing companies using the products -->
+
+    </div>
+</div>
+
+<form class="contact__form">
+    <div class="contact__form__text">
+        Got a question? We’d love to hear from you. Send us a message and we will
+        repsond as soon as possible.
+    </div>
+
+    <label class="contact__form__name">
+        Name
+    </label>
+
+    <input type="text" name="name" required placeholder="Severus Snape"/>
+
+    <label class="contact__form__name">
+        E-mail address
+    </label>
+
+    <input type="email" name="email" required placeholder="severus@snape.com"/>
+
+    <label class="contact__form__name">
+        Topic
+    </label>
+
+    <input type="text" name="topic" required placeholder="Cooperation"/>
+
+    <label class="contact__form__name">
+        Message*
+    </label>
+
+    <textarea
+        placeholder="I'm writing to..."
+        class="contact__form__message"
+        maxlength="400"></textarea>
+
+    <div class="contact__form__disclaimer">*The maximum number of characters: 400</div>
+
+    <button type="submit" class="contact__button">
+        SUBMIT
+    </button>
+</form>
+</section>
+
+<!-- news section -->
+<section class="news">
+<div class="section-title">
+    LATEST NEWS AND INSIGHTS
+</div>
+
+<div class="news__more">
+    <a href="#">
+        ALL POSTS >
+    </a>
+</div>
+
+<div class="news__container">
+    <div class="news__container__featured-post">
+        <img
+            src="./img/winflector.png"
+            alt="winflector"
+            class="news__container__photo"/>
+        <div class="news__block first">
+            <span>MEDIATOR</span>
+            <h4 class="news__block__title">
+                Mediator package - 4.3.3.1
+            </h4>
+            <div class="news__block__desc">
+                We have released a new version of Mediator package - 4.3.3.1. The most important
+                changes: new functions allowing a client applications to use...
+            </div>
+            <button class="news__block__button">
+                LEARN MORE >
+            </button>
+        </div>
+    </div>
+
+    <div class="news__container__row2">
+        <div class="news__block second">
+            <span>MEDIATOR</span>
+            <h4 class="news__block__title">
+                Mediator package - 4.3.3.1
+            </h4>
+            <div class="news__block__desc">
+                We have released a new version of Mediator package - 4.3.3.1. The most important
+                changes: new functions allowing a client applications to use...
+            </div>
+            <button class="news__block__button">
+                LEARN MORE >
+            </button>
+        </div>
+
+        <div class="news__block third">
+            <span>MEDIATOR</span>
+            <h4 class="news__block__title">
+                Mediator package - 4.3.3.1
+            </h4>
+            <div class="news__block__desc">
+                We have released a new version of Mediator package - 4.3.3.1. The most important
+                changes: new functions allowing a client applications to use...
+            </div>
+            <button class="news__block__button">
+                LEARN MORE >
+            </button>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+<div class="footer__container">
+    <div class="footer__logo">
+        <img src="./img/otclogo.svg" alt="logo"/>
+    </div>
+    <ul class="footer__links">
+        <li class="with-line">
+            © 2021 OTC S. A. All Rights Reserved.
+        </li>
+
+        <li class="with-line">
+            <a href="#">Sitemap</a>
+        </li>
+
+        <li>
+            <a href="#">Privacy Policy</a>
+        </li>
+    </ul>
+
+    <div class="footer__social">
+        <a href="#">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+</div>
+
+<div class="footer__overlay">
+    <div class="footer__contact">
+        <div class="footer__contact__text">
+            <span>ADDRESS</span><br/>
+            OTC S.A.
+            <br/>
+            ul. Chelmonskiego 248
+            <br/>
+            31-348 Cracow
+            <br/>
+            Poland
+            <br/>
+        </div>
+        <div class="footer__contact__text">
+            <span>PHONE</span><br/>
+            +48 12 6263636
+        </div>
+        <div class="footer__contact__text">
+            <span>FAX</span><br/>
+            +48 12 6263638
+        </div>
+        <div class="footer__contact__text">
+            <span>MOBILE</span><br/>
+            +48 12 6263638
+        </div>
+        <div class="footer__contact__text">
+            <span>E-MAIL</span><br/>
+            information: office@otc.pl
+            <br/>
+            technical support: support@otc.pl
+            <br/>
+            orders: orders@otc.pl
+            <br/>
+            webmaster: webmaster@otc.pl
+            <br/>
+        </div>
+    </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+</body>
+
+</html>

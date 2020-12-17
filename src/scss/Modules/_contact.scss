@@ -1,0 +1,221 @@
+@import '../Base/variables';
+@import '../Mixins/mixins';
+@import '../Lib/include-media';
+
+.contact {
+	background-color: $base-color;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 50px 15%;
+
+	@include media("<=sm-desktop"){
+		flex-flow: column;
+	}
+
+	&__stats {
+		flex-basis: 50%;
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+		align-items: center;
+		margin-right: 20px;
+
+		@include media("<=sm-desktop"){
+			margin-right: 0;
+		}
+
+		.section-title{
+			color: white;
+		}
+
+		&__numbers{
+			display: flex;
+			margin: 30px 0;
+			width: 100%;
+			border: 1px solid white;
+			border-radius: 30px;
+			height: 150px;
+
+			@include media("<=tablet"){
+				width: 80vw;
+			}
+
+			.stat-item{
+				flex-basis: 35%;
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+				font-family: Montserrat;
+				font-weight: 600;
+				color: white;
+				border-right: 1px solid white;
+
+				.stat-num{
+					font-size: 70px;
+					@include media("<=tablet"){
+						font-size: 60px;
+					}
+				}
+
+				.stat-desc{
+					font-size: 15px;
+					text-align: center;
+				}
+			}
+
+			.stat-item-wide{
+				flex-basis: 65%;
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+				font-family: Montserrat;
+				font-weight: 600;
+				color: white;
+
+				.stat-num{
+					font-size: 70px;
+					@include media("<=tablet"){
+						font-size: 60px;
+					}
+				}
+
+				.stat-desc{
+					font-size: 15px;
+					text-align: center;
+				}
+			}
+
+		}
+
+		&__companies{
+			width: 90%;
+			margin-top: 120px;
+
+			@include media("<=sm-desktop"){
+				margin-top: 30px;
+			}
+
+			.companies__title{
+				color: white;
+				font-family: Montserrat;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 20px;
+				text-align: center;
+			}
+
+			.companies__logos{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 70px;
+				text-align: center;
+
+				@include media("<=sm-desktop"){
+					margin-top: 30px;
+					margin-bottom: 30px;
+				}
+
+				.logo{
+					height: 2vw;
+
+					@include media("<=sm-desktop"){
+						height: 30px;
+					}
+
+					@include media("<=tablet"){
+						height: 20px;
+					}
+				}
+			}
+		}
+
+		@include media("<=sm-desktop"){
+			width: 80%;
+		}
+
+	}
+
+	&__form {
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		font-family: 'Montserrat';
+		width: 500px;
+		padding: 40px;
+		border-radius: 30px;
+
+		@include media("<=tablet"){
+            width: 80vw;
+        }
+
+		&__text {
+			font-weight: 400;
+			font-size: 15px;
+			text-align: center;
+		}
+
+		&__name {
+			margin-top: 20px;
+			font-weight: 600;
+			font-size: 14px;
+		}
+
+		input {
+			margin-top: 5px;
+			width: 100%;
+			font-size: 13px;
+			font-weight: 400;
+			height: 35px;
+			border: 1px solid rgba(0, 0, 0, 0.4);
+			box-sizing: border-box;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-family: 'Montserrat';
+			color: black;
+
+			&:focus {
+				border: 2px solid $base-color;
+			}
+
+		}
+
+		*:focus {
+			outline: none;
+		}
+
+		&__message {
+			margin-top: 5px;
+			width: 100%;
+			font-size: 13px;
+			height: 100px;
+			border: 1px solid rgba(0, 0, 0, 0.4);
+			box-sizing: border-box;
+			padding: 10px 10px 10px 10px;
+			line-height: 20px;
+			resize: vertical;
+			font-family: 'Montserrat';
+
+			&:focus {
+				border: 2px solid $base-color;
+			}
+		}
+
+		&__disclaimer {
+			text-align: right;
+			font-size: 12px;
+			margin-top: 7px;
+		}
+	}
+
+	&__button {
+		@include button;
+		background-color: $base-color;
+		width: 100%;
+		margin-top: 50px;
+		align-self: center;
+	}
+}

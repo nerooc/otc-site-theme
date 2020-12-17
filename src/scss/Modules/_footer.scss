@@ -1,0 +1,163 @@
+@import '../Base/variables';
+@import '../Lib/include-media';
+
+.footer {
+    position: relative;
+    background-color: #1a1a1a;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        margin: 0 15%;
+
+        @include media("<=desktop"){
+            margin: 0 10%;
+        }
+
+        @include media("<=bg-tablet"){
+            flex-direction: column;
+            padding-bottom: 70px;
+        }
+    }
+
+    &__logo img{
+        width: 150px;
+
+        @include media("<=sm-desktop"){
+            width: 130px
+        }
+
+        @include media("<=bg-tablet"){
+            margin: 20px;
+        }
+    }
+
+    &__links {
+        width: 550px;
+        color: white;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+
+        @include media("<=sm-desktop"){
+            width: 470px;
+        }
+
+        @include media("<=bg-tablet"){
+            position: absolute;
+            bottom: 20px;
+        }
+
+        @include media("<=tablet"){
+            width: 420px;
+        }
+
+        a {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        li {
+            position: relative;
+            &:nth-child(2):hover,
+            &:nth-child(3):hover {
+                color: $base-color;
+            }
+
+            @include media("<=sm-desktop"){
+                font-size: 14px;
+            }
+
+            @include media("<=tablet"){
+                font-size: 12px;
+            }
+        }
+
+        .with-line::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: calc(100% + 15px);
+            background-color: white;
+            width: 1px;
+            height: 23px;
+        }
+    }
+
+    &__social {
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+
+
+        @include media(">bg-tablet", "<=sm-desktop"){
+            width: 120px;
+        }
+
+        .fab{
+            color: white;
+            transform: scale(1.5);
+
+            &:hover{
+                color: $base-color;
+            }
+
+            @include media("<=sm-desktop"){
+                transform: scale(1.3);
+            }
+        }
+    }
+
+    &__contact {
+        margin: 30px 15% 0;
+        display: flex;
+        justify-content: space-between;
+
+        &__text {
+            color: #323232;
+            font-size: 15px;
+            text-align: center;
+            font-family: Montserrat;
+            font-weight: 400;
+            line-height: 22px;
+
+            &:first-of-type{
+                text-align: left;
+            }
+
+            &:last-of-type{
+                text-align: right;
+            }
+
+            span {
+                font-size: 17px;
+                display: block;
+                font-weight: 600;
+                margin-bottom: -10px;
+            }
+        }
+
+        @include media("<=desktop"){
+            margin: 50px 10% 0;
+        }
+    }
+
+    &__overlay {
+        background-color: white;
+        padding-bottom: 30px;
+
+        @include media("<=sm-desktop"){
+            display: none;
+        }
+        
+    }
+}
+
+
